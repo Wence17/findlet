@@ -1,0 +1,27 @@
+import { Image } from "sanity";
+
+interface Heroes {
+    image1:Image
+    image2:image
+    alt:string
+}
+
+export type Base = {
+    _id: string
+    _rev: string
+    _createdAt: string
+    _updatedAt: string
+    _type: 'post'
+  }
+  
+  interface SimplifiedProduct extends Base {
+    imageUrl: string
+    price:number
+    slug:string
+    name:string
+    categoryName: string
+  }
+  
+  interface Products extends Base {
+
+  }

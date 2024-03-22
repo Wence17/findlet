@@ -99,11 +99,13 @@ export default defineType({
     select: {
       title: 'name',
       description: 'description',
-      media: 'images[0]',
+      media: 'images',
     },
     prepare(selection) {
+      const media = selection.media[0]
+      const {title} = selection
       const {description} = selection
-      return {...selection, subtitle: description && `by ${description}`}
+      return {media, title, subtitle: description && `by ${description}`}
     },
   },
 })

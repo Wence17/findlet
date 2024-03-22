@@ -39,7 +39,7 @@ export default defineType({
 
   preview: {
     select: {
-      title: 'image2.alt',
+      title: 'image1.alt',
       media: 'image1',
     },
     prepare(selection) {
