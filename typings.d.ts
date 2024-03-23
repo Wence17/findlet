@@ -23,5 +23,14 @@ export type Base = {
   }
   
   interface Products extends Base {
+    images:Image
+    price:number
+    slug:string
+    name:string
+    description:string
+    categoryName:string
+  }
 
+  interface IAppsProps{
+    images:any
   }

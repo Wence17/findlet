@@ -40,3 +40,20 @@ export const productPathsQuery = groq`*[_type == "product" && defined(slug.curre
     "params": { "slug": slug.current }
   }
 `
+
+// Get products by their category slug
+export const categoryQuery = groq`*[_type == "product" && categories[0]->name == $category]{ 
+  ...,
+  "imageUrl":images[0].asset->url,
+  price,
+  name,
+  "slug":slug.current,
+  "categoryName":categories[0]->name
+}
+`
+
+// Get all category slugs
+export const categoryPathsQuery = groq`*[_type == "product" && defined(categories[0]->name)]{
+  "params": { "category": categories[0]->name }
+}
+`
