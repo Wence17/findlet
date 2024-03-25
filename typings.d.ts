@@ -34,3 +34,11 @@ export type Base = {
   interface IAppsProps{
     images:any
   }
+
+  interface ProductCart{
+    name:string
+    description:string
+    price:number
+    currency:string
+    image:any
+  }
