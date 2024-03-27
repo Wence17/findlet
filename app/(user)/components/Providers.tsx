@@ -8,8 +8,8 @@ const CartProviders = ({ children }: { children: ReactNode }) => {
       mode="payment"
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
-      successUrl=""
-      cancelUrl=""
+      successUrl="http://localhost:3000/payment/success"
+      cancelUrl="http://localhost:3000/payment/payment/error"
       currency="USD"
       billingAddressCollection={true}
       shouldPersist={true}

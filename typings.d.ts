@@ -25,6 +25,7 @@ export type Base = {
   interface Products extends Base {
     images:Image
     price:number
+    price_id:string
     slug:string
     name:string
     description:string
@@ -41,4 +42,5 @@ export type Base = {
     price:number
     currency:string
     image:any
+    price_id:string
   }

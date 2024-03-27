@@ -18,7 +18,22 @@ const ShoppingCartModal = () => {
     cartDetails,
     removeItem,
     totalPrice,
+    redirectToCheckout,
   } = useShoppingCart();
+
+  async function handleCheckoutNow(e:any){
+    
+    e?.preventDefault()
+
+    try {
+      const result = await redirectToCheckout()
+      if (result?.error){
+        console.log("This error happened during redirectToCheckout", result)
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <Sheet open={shouldDisplayCart} onOpenChange={() => handleCartClick()}>
       <SheetContent className="sm:max-w-lg w-[90vw]">
@@ -87,7 +102,7 @@ const ShoppingCartModal = () => {
             </p>
 
             <div className="mt-6">
-                <Button className="w-full">Checkout</Button>
+                <Button onClick={() => handleCheckoutNow} className="w-full">Checkout</Button>
             </div>
 
             <div className="mt-6 flex justify-center text-center text-sm text-gray-500">

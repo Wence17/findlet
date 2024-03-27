@@ -67,12 +67,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
             <div className="flex gap-2.5">
               <AddToBag
-                currency="USD"
+                currency="NGN"
                 description={product.description}
                 image={product.images[0]}
                 name={product.name}
                 price={product.price}
                 key={product._id}
+                price_id={product.price_id}
               />
               <Button variant={"secondary"}>Checkout now</Button>
             </div>

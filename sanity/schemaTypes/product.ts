@@ -53,6 +53,11 @@ export default defineType({
       title: 'Price of Product',
       type: 'number',
     }),
+    defineField({
+      name: 'price_id',
+      title: 'Flutterwave Price ID',
+      type: 'string',
+    }),
 
 
 

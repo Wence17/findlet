@@ -10,6 +10,7 @@ const AddToBag = ({
   image,
   name,
   price,
+  price_id,
 }: ProductCart) => {
   const { addItem, handleCartClick } = useShoppingCart();
 
@@ -19,7 +20,7 @@ const AddToBag = ({
     price:price,
     currency:currency,
     image:urlForImage(image),
-    id:"sdfalfjldf"
+    id:price_id
   }
   return <Button onClick={()=>{
     addItem(product), handleCartClick();
