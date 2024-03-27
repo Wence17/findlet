@@ -1,22 +1,22 @@
 "use client"
 import { client } from '@/sanity/lib/client'
-import { productsQuery } from '@/sanity/lib/query'
+import { allProductsQuery} from '@/sanity/lib/query'
 import { SimplifiedProduct } from '@/typings'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
-const Newest = () => {
+const AllProducts = () => {
     const [products, setProducts] = useState<SimplifiedProduct[]>([])
 
   useEffect(() => {
     const handleFetch = async () => {
       try {
-        const product = await client.fetch(productsQuery)
+        const product = await client.fetch(allProductsQuery)
         setProducts(product)
       } catch (error) {
-        console.log("encountered error while trying to fetch newest",error)
+        console.log("encountered error while trying to fetch AllProducts",error)
       }
     }
     handleFetch()
@@ -27,15 +27,15 @@ const Newest = () => {
         <div className='mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
             <div className='flex justify-between items-center'>
                 <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
-                    Our Newest products
+                    Our products
                 </h2>
 
-                <Link href={'/AllProducts'} className='text-primary flex items-center gap-x-1'>
+                {/* <Link href={'/all'} className='text-primary flex items-center gap-x-1'>
                     See All {' '}
                     <span>
                         <ArrowRight />
                     </span>
-                </Link>
+                </Link> */}
             </div>
 
             <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
@@ -74,4 +74,4 @@ const Newest = () => {
   )
 }
 
-export default Newest
+export default AllProducts

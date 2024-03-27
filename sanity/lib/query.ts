@@ -22,7 +22,16 @@ export const productsQuery = groq`*[_type == "product"][0...4]{
     "categoryName":categories[0]->name
   } | order(_createdAt asc)
 `
-
+// Get Products
+export const allProductsQuery = groq`*[_type == "product"]{
+  _id,
+    price,
+    name,
+    "imageUrl":images[0].asset->url,
+    "slug":slug.current,
+    "categoryName":categories[0]->name
+  } | order(_createdAt asc)
+`
 // Get a single product by its slug
 export const productQuery = groq`*[_type == "product" && slug.current == $slug][0]{ 
     ...,

@@ -55,7 +55,7 @@ export default defineType({
     }),
     defineField({
       name: 'price_id',
-      title: 'Flutterwave Price ID',
+      title: 'Paystack Price ID',
       type: 'string',
     }),
 
