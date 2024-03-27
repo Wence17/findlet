@@ -8,6 +8,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import Image from "next/image";
+import Link from "next/link";
 import { useShoppingCart } from "use-shopping-cart";
 
 const ShoppingCartModal = () => {
@@ -21,17 +22,16 @@ const ShoppingCartModal = () => {
     redirectToCheckout,
   } = useShoppingCart();
 
-  async function handleCheckoutNow(e:any){
-    
-    e?.preventDefault()
+  async function handleCheckoutNow(e: any) {
+    e?.preventDefault();
 
     try {
-      const result = await redirectToCheckout()
-      if (result?.error){
-        console.log("This error happened during redirectToCheckout", result)
+      const result = await redirectToCheckout();
+      if (result?.error) {
+        console.log("This error happened during redirectToCheckout", result);
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   }
   return (
@@ -102,13 +102,30 @@ const ShoppingCartModal = () => {
             </p>
 
             <div className="mt-6">
-                <Button onClick={() => handleCheckoutNow} className="w-full">Checkout</Button>
+              <Button onClick={() => handleCheckoutNow} className="w-full">
+                Checkout
+              </Button>
+            </div>
+
+            <div className="mt-6 flex justify-center text-center text-base font-medium text-primary hover:text-primary/80">
+              <Link href={"/OnDelivery"} 
+              // target="_blank"
+                  onClick={() => handleCartClick()}
+              >
+                Payment on Delivery
+              </Link>
             </div>
 
             <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
-                <p>
-                    OR <button onClick={() => handleCartClick()} className="font-medium text-primary hover:text-primary/80">Continue Shopping</button>
-                </p>
+              <p>
+                OR{" "}
+                <button
+                  onClick={() => handleCartClick()}
+                  className="font-medium text-primary hover:text-primary/80"
+                >
+                  Continue Shopping
+                </button>
+              </p>
             </div>
           </div>
         </div>

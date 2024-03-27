@@ -5,7 +5,7 @@ import React from "react";
 import logo from "@/public/assets/images/logo.jpg";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import { useShoppingCart } from "use-shopping-cart";
 
 const links = [
@@ -17,7 +17,10 @@ const links = [
 
 const Navbar = () => {
   const pathname = usePathname();
-  const { handleCartClick } = useShoppingCart();
+    
+    const {cartCount, handleCartClick } = useShoppingCart();
+
+  
   return (
     <header className="mb-8 border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
@@ -57,10 +60,13 @@ const Navbar = () => {
           <Button
             variant={"outline"}
             onClick={() => handleCartClick()}
-            className="flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-none"
+            className="relative flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-none"
           >
-            <ShoppingBag />
+            <div className="absolute right-50 top-0 text-primary font-semibold text-sm md:text-lg">{cartCount}</div>
+            <ShoppingCart />
             <span className="hidden text-xs font-semibold text-gray-500 sm:block">
+    
+              
               Cart
             </span>
           </Button>

@@ -15,16 +15,23 @@ const AddToBag = ({
   const { addItem, handleCartClick } = useShoppingCart();
 
   const product = {
-    name:name,
-    description:description,
-    price:price,
-    currency:currency,
-    image:urlForImage(image),
-    id:price_id
-  }
-  return <Button onClick={()=>{
-    addItem(product), handleCartClick();
-  }}>Add To Cart</Button>;
+    name: name,
+    description: description,
+    price: price,
+    currency: currency,
+    image: urlForImage(image),
+    id: price_id,
+  };
+  return (
+    <Button
+      onClick={() => {
+        addItem(product) 
+        // handleCartClick();
+      }}
+    >
+      Add To Cart
+    </Button>
+  );
 };
 
 export default AddToBag;

@@ -56,7 +56,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               </div>
 
               <span className="text-sm text-gray-500">
-                Incl. Vat plus shipping
+                Incl. Vat plus free shipping
               </span>
             </div>
 
