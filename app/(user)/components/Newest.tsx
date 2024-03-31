@@ -63,7 +63,7 @@ const Newest = () => {
                                 </p>
                             </div>
                             <p className='text-sm font-medium text-gray-900'>
-                                {product.price}
+                            ₦{product.price}
                             </p>
                         </div>
                     </div>

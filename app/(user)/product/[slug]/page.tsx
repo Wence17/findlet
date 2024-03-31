@@ -48,10 +48,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <div className="mb-4">
               <div className="flex items-end gap-2">
                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
-                  ${product.price}
+                ₦{product.price}
                 </span>
                 <span className="mb-0.5 text-red-500 line-through">
-                  ${product.price + 30}
+                ₦{product.price + 30}
                 </span>
               </div>
 
