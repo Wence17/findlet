@@ -1,5 +1,17 @@
 import type { Config } from "tailwindcss"
 
+
+// module.exports = {
+//   theme: {
+//     extend: {
+//       listStyleType: {
+//         decimal: 'decimal',
+//       },
+//     },
+//   },
+// };
+
+
 const config = {
   darkMode: ["class"],
   content: [

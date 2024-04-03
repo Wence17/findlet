@@ -9,9 +9,13 @@ import {
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { useShoppingCart } from "use-shopping-cart";
 
 const ShoppingCartModal = () => {
+
+  // const [email, setEmail] = useState('')
+  // const [amount, setAmount] = useState('')
   const {
     cartCount,
     shouldDisplayCart,
