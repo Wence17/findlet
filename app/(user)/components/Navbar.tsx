@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "@/public/assets/images/logo.jpg";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 import { useShoppingCart } from "use-shopping-cart";
+import FacebookPixel from 'react-facebook-pixel';
 
 const links = [
   { name: "Home", href: "/" },
@@ -20,13 +21,18 @@ const Navbar = () => {
     
     const {cartCount, handleCartClick } = useShoppingCart();
 
+    useEffect(() => {
+      // Check if we're in the browser before initializing the Facebook Pixel
+      if (typeof window !== 'undefined') {
+        FacebookPixel.init('YOUR_PIXEL_ID');
+        FacebookPixel.pageView();
+      }
+    }, []);
   
   return (
     <header className="mb-8 border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <Link href={"/"}>
-          {/* <h1 className='text-2xl md:text-4xl font-bold'>Find<span className="text-primary">Let</span></h1> */}
-          {/* "/assets/images/logo.png" */}
           <Image
             src={logo}
             alt="Your gateway to great finds"

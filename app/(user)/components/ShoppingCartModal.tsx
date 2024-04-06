@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useShoppingCart } from "use-shopping-cart";
+import FacebookPixel from "react-facebook-pixel";
 
 const ShoppingCartModal = () => {
 
@@ -27,6 +28,7 @@ const ShoppingCartModal = () => {
   } = useShoppingCart();
 
   async function handleCheckoutNow(e: any) {
+    FacebookPixel.track('ButtonClicked', { buttonType: 'HandleCheckout' });
     e?.preventDefault();
 
     try {
@@ -114,7 +116,9 @@ const ShoppingCartModal = () => {
             <div className="mt-6 flex justify-center text-center text-base font-medium text-primary hover:text-primary/80">
               <Link href={"/OnDelivery"} 
               // target="_blank"
-                  onClick={() => handleCartClick()}
+                  onClick={() => {
+                    FacebookPixel.track('ButtonClicked', { buttonType: 'On Delivery' });
+                    return handleCartClick()}}
               >
                 Payment on Delivery
               </Link>

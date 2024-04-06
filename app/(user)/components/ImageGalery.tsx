@@ -3,6 +3,7 @@ import { urlForImage } from '@/sanity/lib/image'
 import { IAppsProps } from '@/typings'
 import Image from 'next/image'
 import React, { useState } from 'react'
+import FacebookPixel from 'react-facebook-pixel';
 
 const ImageGalery = ({images}:IAppsProps) => {
 
@@ -10,6 +11,7 @@ const ImageGalery = ({images}:IAppsProps) => {
 
     const handleSmallImageClick = (image:IAppsProps) =>{
         setBigImage(image)
+        FacebookPixel.track('ButtonClicked', { buttonType: 'Checked out the product images' });
     }
     
   return (

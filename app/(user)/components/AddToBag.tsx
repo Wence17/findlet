@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { urlForImage } from "@/sanity/lib/image";
 import { ProductCart } from "@/typings";
 import { useShoppingCart } from "use-shopping-cart";
+import FacebookPixel from 'react-facebook-pixel';
 
 const AddToBag = ({
   currency,
@@ -26,6 +27,7 @@ const AddToBag = ({
     <Button
       onClick={() => {
         addItem(product) 
+        FacebookPixel.track('ButtonClicked', { buttonType: 'Add To Cart' });
         // handleCartClick();
       }}
     >

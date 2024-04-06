@@ -106,28 +106,6 @@ const Footer = () => {
             <span className="sr-only">Dribbble account</span>
           </Link>
         </div>
-          {/* <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <Link href="#" className="hover:underline me-4 md:me-6">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline me-4 md:me-6">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline me-4 md:me-6">
-                Licensing
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Contact
-              </Link>
-            </li>
-          </ul> */}
         </div>
         <hr className="my-4 border-gray-200 mx-auto dark:border-gray-700" />
         <span className="block text-sm text-gray-500 text-center dark:text-gray-400">

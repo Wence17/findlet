@@ -1,8 +1,16 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import FacebookPixel from "react-facebook-pixel";
 
 const OnDelivery = () => {
+  useEffect(() => {
+    // Check if we're in the browser before initializing the Facebook Pixel
+    if (typeof window !== "undefined") {
+      FacebookPixel.pageView();
+    }
+  }, []);
   return (
     <div>
       <div className="flex flex-col items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
@@ -33,11 +41,15 @@ const OnDelivery = () => {
       </div>
 
       <div className="mt-6 flex justify-center">
-          <Link href={"https://forms.gle/RpWLtNdLqKg3ASqJ7"} target="_blank" passHref>
-        <Button className="w-fit rounded-full font-semibold text-lg px-8 py-4">
+        <Link
+          href={"https://forms.gle/RpWLtNdLqKg3ASqJ7"}
+          target="_blank"
+          passHref
+        >
+          <Button className="w-fit rounded-full font-semibold text-lg px-8 py-4">
             Proceed
-        </Button>
-          </Link>
+          </Button>
+        </Link>
       </div>
     </div>
   );

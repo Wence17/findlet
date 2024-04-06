@@ -5,6 +5,8 @@ import ImageGalery from "../../components/ImageGalery";
 import { Button } from "@/components/ui/button";
 import { Star, Truck } from "lucide-react";
 import AddToBag from "../../components/AddToBag";
+import CheckoutNow from "../../components/CheckoutNow";
+import { useEffect } from "react";
 
 export async function generateStaticParams() {
   const products = await cachedClient(productPathsQuery);
@@ -17,6 +19,9 @@ export const revalidate = 60;
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const product: Products = await client.fetch(productQuery, params);
+ 
+  
+
 
   return (
     <div className="bg-white">
@@ -48,10 +53,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <div className="mb-4">
               <div className="flex items-end gap-2">
                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
-                ₦{product.price}
+                  ₦{product.price}
                 </span>
                 <span className="mb-0.5 text-red-500 line-through">
-                ₦{product.price + 30}
+                  ₦{product.price + 30}
                 </span>
               </div>
 
@@ -75,7 +80,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 key={product._id}
                 price_id={product.price_id}
               />
-              <Button variant={"secondary"}>Checkout now</Button>
+              {/* <Button variant={"secondary"}>Checkout now</Button> */}
+              <CheckoutNow
+                currency="NGN"
+                description={product.description}
+                image={product.images[0]}
+                name={product.name}
+                price={product.price}
+                key={product._id}
+                price_id={product.price_id}
+              />
             </div>
 
             <p className="mt-12 text-base text-gray-500 tracking-wide">

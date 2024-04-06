@@ -6,6 +6,7 @@ import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import FacebookPixel from 'react-facebook-pixel';
 
 const AllProducts = () => {
     const [products, setProducts] = useState<SimplifiedProduct[]>([])
@@ -20,6 +21,7 @@ const AllProducts = () => {
       }
     }
     handleFetch()
+    FacebookPixel.pageView();
   }, [])
 
   return (
