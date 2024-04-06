@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import FacebookPixel from 'react-facebook-pixel';
+// import FacebookPixel from 'react-facebook-pixel';
 
 const AllProducts = () => {
     const [products, setProducts] = useState<SimplifiedProduct[]>([])
@@ -20,8 +20,10 @@ const AllProducts = () => {
         console.log("encountered error while trying to fetch AllProducts",error)
       }
     }
+
+        //   FacebookPixel.pageView();
+          
     handleFetch()
-    FacebookPixel.pageView();
   }, [])
 
   return (

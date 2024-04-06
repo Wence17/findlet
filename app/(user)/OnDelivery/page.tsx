@@ -5,12 +5,9 @@ import React, { useEffect } from "react";
 import FacebookPixel from "react-facebook-pixel";
 
 const OnDelivery = () => {
-  useEffect(() => {
-    // Check if we're in the browser before initializing the Facebook Pixel
-    if (typeof window !== "undefined") {
-      FacebookPixel.pageView();
-    }
-  }, []);
+
+      // FacebookPixel.pageView();
+      
   return (
     <div className="mb-14">
       <div className="flex flex-col items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">

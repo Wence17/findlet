@@ -4,7 +4,7 @@ import { SimplifiedProduct } from '@/typings'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import FacebookPixel from 'react-facebook-pixel';
+// import FacebookPixel from 'react-facebook-pixel';
 
 
 
@@ -26,7 +26,7 @@ export async function generateStaticParams() {
 const page = async ({ params }: { params: {category:string} }) => {
 
     
-    FacebookPixel.pageView();
+    // FacebookPixel.pageView();
     const category: SimplifiedProduct[] = await client.fetch(categoryQuery, params)
 
 
