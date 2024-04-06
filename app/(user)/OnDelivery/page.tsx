@@ -12,7 +12,7 @@ const OnDelivery = () => {
     }
   }, []);
   return (
-    <div>
+    <div className="mb-14">
       <div className="flex flex-col items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <h1 className="capitalize font-bold text-red-700 text-lg md:text-3xl mb-4 md:mb-10 text-center">
           Urgent notice before placing your order
