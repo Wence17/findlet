@@ -6,14 +6,14 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 rounded-lg shadow mt-4">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
+        <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            className="flex items-center md:mb-4 mb-0 "
           >
-            <Image src={logo} className="w-24 md:w-40" alt="Flowbite Logo" />
+            <Image src={logo} className="w-24 md:w-40" alt="findlet Logo" />
           </Link>
-          <div className="flex mt-4 sm:justify-center sm:mt-0">
+          <div className="flex justify-center items">
           <Link
             href="#"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
@@ -129,10 +129,10 @@ const Footer = () => {
             </li>
           </ul> */}
         </div>
-        <hr className="my-6 border-gray-200 mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-4 border-gray-200 mx-auto dark:border-gray-700" />
         <span className="block text-sm text-gray-500 text-center dark:text-gray-400">
-          © 2023{" "}
-          <Link href="https://flowbite.com/" className="hover:underline">
+          © {new Date().getFullYear()}{" "}
+          <Link href="/" className="hover:underline">
             FindLet™
           </Link>
           . All Rights Reserved.
