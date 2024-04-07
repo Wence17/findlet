@@ -3,7 +3,7 @@ import { urlForImage } from '@/sanity/lib/image'
 import { IAppsProps } from '@/typings'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import FacebookPixel from 'react-facebook-pixel';
+// import FacebookPixel from 'react-facebook-pixel';
 
 const ImageGalery = ({images}:IAppsProps) => {
 
@@ -11,7 +11,7 @@ const ImageGalery = ({images}:IAppsProps) => {
 
     const handleSmallImageClick = (image:IAppsProps) =>{
         setBigImage(image)
-        FacebookPixel.track('ButtonClicked', { buttonType: 'Checked out the product images' });
+        // FacebookPixel.track('ButtonClicked', { buttonType: 'Checked out the product images' });
     }
     
   return (
@@ -21,7 +21,7 @@ const ImageGalery = ({images}:IAppsProps) => {
                     <div key={i} className='oveerflow-hidden rounded-lg bg-gray-100'>
                         <Image 
                         src={urlForImage(image)}
-                        alt={image.alt}
+                        alt={image.alt?image.alt:''}
                         width={200}
                         height={200}
                         className='h-full w-full object-cover object-center cursor-pointer'

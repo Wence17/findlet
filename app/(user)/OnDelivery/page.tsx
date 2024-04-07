@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React, { useEffect } from "react";
-import FacebookPixel from "react-facebook-pixel";
+// import FacebookPixel from "react-facebook-pixel";
 
 const OnDelivery = () => {
 

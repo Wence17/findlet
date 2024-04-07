@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Star, Truck } from "lucide-react";
 import AddToBag from "../../components/AddToBag";
 import CheckoutNow from "../../components/CheckoutNow";
-import { useEffect } from "react";
+
 
 export async function generateStaticParams() {
   const products = await cachedClient(productPathsQuery);
@@ -87,7 +87,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 image={product.images[0]}
                 name={product.name}
                 price={product.price}
-                key={product._id}
                 price_id={product.price_id}
               />
             </div>

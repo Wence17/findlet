@@ -11,7 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useShoppingCart } from "use-shopping-cart";
-import FacebookPixel from "react-facebook-pixel";
+// import FacebookPixel from "react-facebook-pixel";
 
 const ShoppingCartModal = () => {
 
@@ -27,17 +27,17 @@ const ShoppingCartModal = () => {
     redirectToCheckout,
   } = useShoppingCart();
 
-  async function handleCheckoutNow(e: any) {
-    FacebookPixel.track('ButtonClicked', { buttonType: 'HandleCheckout' });
+  async function handleCheckoutClick(e: any) {
+    // FacebookPixel.track('ButtonClicked', { buttonType: 'HandleCheckout' });
     e?.preventDefault();
 
     try {
       const result = await redirectToCheckout();
       if (result?.error) {
-        console.log("This error happened during redirectToCheckout", result);
+        console.log("This result error happened during redirectToCheckout", result);
       }
     } catch (error) {
-      console.log(error);
+      console.log("This error happened during redirectToCheckout", error);
     }
   }
   return (
@@ -108,8 +108,8 @@ const ShoppingCartModal = () => {
             </p>
 
             <div className="mt-6">
-              <Button onClick={() => handleCheckoutNow} className="w-full">
-                Checkout
+              <Button onClick={handleCheckoutClick} className="w-full">
+                Checkouts
               </Button>
             </div>
 
@@ -117,7 +117,7 @@ const ShoppingCartModal = () => {
               <Link href={"/OnDelivery"} 
               // target="_blank"
                   onClick={() => {
-                    FacebookPixel.track('ButtonClicked', { buttonType: 'On Delivery' });
+                    // FacebookPixel.track('ButtonClicked', { buttonType: 'On Delivery' });
                     return handleCartClick()}}
               >
                 Payment on Delivery

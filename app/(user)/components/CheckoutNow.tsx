@@ -32,7 +32,7 @@ const CheckoutNow = ({
       variant={"secondary"}
       onClick={() => {
         buyNow(product.id);
-        FacebookPixel.track("ButtonClicked", { buttonType: "CheckOutNow" });
+        // FacebookPixel.track("ButtonClicked", { buttonType: "CheckOutNow" });
       }}
     >
       Checkout Now

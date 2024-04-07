@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 import { useShoppingCart } from "use-shopping-cart";
-import FacebookPixel from 'react-facebook-pixel';
+// import FacebookPixel from 'react-facebook-pixel';
 
 const links = [
   { name: "Home", href: "/" },
@@ -21,13 +21,13 @@ const Navbar = () => {
     
     const {cartCount, handleCartClick } = useShoppingCart();
 
-    useEffect(() => {
-      // Check if we're in the browser before initializing the Facebook Pixel
-      if (typeof window !== 'undefined') {
-        FacebookPixel.init('YOUR_PIXEL_ID');
-        FacebookPixel.pageView();
-      }
-    }, []);
+    // useEffect(() => {
+    //   // Check if we're in the browser before initializing the Facebook Pixel
+    //   if (typeof window !== 'undefined') {
+    //     FacebookPixel.init('YOUR_PIXEL_ID');
+    //     FacebookPixel.pageView();
+    //   }
+    // }, []);
   
   return (
     <header className="mb-8 border-b">

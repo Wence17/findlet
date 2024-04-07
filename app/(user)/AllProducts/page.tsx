@@ -33,13 +33,6 @@ const AllProducts = () => {
                 <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
                     Our Products
                 </h2>
-
-                {/* <Link href={'/all'} className='text-primary flex items-center gap-x-1'>
-                    See All {' '}
-                    <span>
-                        <ArrowRight />
-                    </span>
-                </Link> */}
             </div>
 
             <div className='mt-6 grid md:grid-cols-3 gap-x-6 gap-y-10 grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
