@@ -18,3 +18,7 @@ export default function Home() {
     </div>
   );
 }
+
+
+// Obimka Wenceslaus
+// obimkasomto@gmail.com
