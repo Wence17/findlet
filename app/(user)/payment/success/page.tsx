@@ -6,7 +6,7 @@ import React from 'react'
 const SuccessPayment = () => {
   return (
     <div className='h-screeen'>
-        <div className='my-32 md:max-w-[50vw] mx-auto'>
+        <div className='mt-14 md:max-w-[50vw] mx-auto'>
             <CheckCheck className='text-green-600 w-16 h-16 mx-auto my-6' />
             <div className='text-center'>
                 <h3 className='md:text-2xl text-base text-gray-900 font-semibold text-center'>Payment Done!</h3>

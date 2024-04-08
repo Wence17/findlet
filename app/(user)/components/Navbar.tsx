@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "@/public/assets/images/logo.jpg";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart } from "lucide-react";
+import {Menu, ShoppingCart } from "lucide-react";
 import { useShoppingCart } from "use-shopping-cart";
+import GoogleTranslate from "./GoogleTranslate";
+import MenuItems from "./MenuItems";
 // import FacebookPixel from 'react-facebook-pixel';
 
 const links = [
@@ -17,6 +19,7 @@ const links = [
 ];
 
 const Navbar = () => {
+  const [clicked, setClicked] = useState(false)
   const pathname = usePathname();
     
     const {cartCount, handleCartClick } = useShoppingCart();
@@ -39,7 +42,6 @@ const Navbar = () => {
             className="w-24 md:w-40 cursor-pointer"
           />
         </Link>
-
         <nav className="hidden gap-12 lg:flex 2xl:ml-16">
           {links.map((link, i) => (
             <div key={i}>
@@ -61,6 +63,12 @@ const Navbar = () => {
             </div>
           ))}
         </nav>
+            <GoogleTranslate />
+        <nav className="lg:hidden relative" onClick={()=>setClicked(!clicked)}>
+          <Menu />
+      {clicked && <MenuItems />}
+        </nav>
+
 
         <div className="flex divide-x border-r sm:border-l">
           <Button
