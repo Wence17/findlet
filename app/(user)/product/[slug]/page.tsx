@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Star, Truck } from "lucide-react";
 import AddToBag from "../../components/AddToBag";
 import CheckoutNow from "../../components/CheckoutNow";
+import { myPortableTextComponents } from "../../components/myPortableTextComponent";
+import { PortableText } from "@portabletext/react";
 
 
 export async function generateStaticParams() {
@@ -20,7 +22,6 @@ export const revalidate = 60;
 export default async function Page({ params }: { params: { slug: string } }) {
   const product: Products = await client.fetch(productQuery, params);
  
-  
 
 
   return (
@@ -56,7 +57,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   ₦{product.price}
                 </span>
                 <span className="mb-0.5 text-red-500 line-through">
-                  ₦{product.price + 30}
+                  ₦{product.price + 5000}
                 </span>
               </div>
 
@@ -73,7 +74,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <div className="flex gap-2.5">
               <AddToBag
                 currency="NGN"
-                description={product.description}
+                description={product.description2}
                 image={product.images[0]}
                 name={product.name}
                 price={product.price}
@@ -83,7 +84,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               {/* <Button variant={"secondary"}>Checkout now</Button> */}
               <CheckoutNow
                 currency="NGN"
-                description={product.description}
+                description={product.description2}
                 image={product.images[0]}
                 name={product.name}
                 price={product.price}
@@ -91,8 +92,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
               />
             </div>
 
-            <p className="mt-12 text-base text-gray-500 tracking-wide">
-              {product.description}
+            <div className="md:hidden mt-12 text-base text-gray-500 tracking-wide text-justify">
+            <PortableText 
+              value={product.description}
+              components={myPortableTextComponents}
+            />
+              {/* {product.description} */}
+            </div>
+
+            <p className="hidden md:flex mt-12 text-base text-gray-500 tracking-wide text-justify">
+              {product.description2}
             </p>
           </div>
         </div>

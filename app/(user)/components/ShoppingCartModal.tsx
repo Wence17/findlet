@@ -56,7 +56,7 @@ const ShoppingCartModal = () => {
                 <>
                   {Object.values(cartDetails ?? {}).map((entry) => (
                     <li key={entry.id} className="flex py-6">
-                      <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+                      <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200 shadow-md">
                         <Image
                           src={entry.image as string}
                           alt="Product image"
@@ -72,7 +72,7 @@ const ShoppingCartModal = () => {
                             <p className="ml-4">₦{entry.price}</p>
                           </div>
                           <p className="mt-1 text-sm text-gray-500 line-clamp-2">
-                            {entry.description}
+                            {entry.description2}
                           </p>
                         </div>
 

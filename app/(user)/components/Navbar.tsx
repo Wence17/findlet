@@ -63,11 +63,11 @@ const Navbar = () => {
             </div>
           ))}
         </nav>
-            <GoogleTranslate />
-        <nav className="lg:hidden relative" onClick={()=>setClicked(!clicked)}>
+        <nav className="lg:hidden relative ml-24" onClick={()=>setClicked(!clicked)}>
           <Menu />
       {clicked && <MenuItems />}
         </nav>
+            <GoogleTranslate />
 
 
         <div className="flex divide-x border-r sm:border-l">

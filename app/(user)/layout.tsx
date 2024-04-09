@@ -6,6 +6,7 @@ import { CartProvider } from "use-shopping-cart";
 import CartProviders from "./components/Providers";
 import ShoppingCartModal from "./components/ShoppingCartModal";
 import Footer from "./components/Footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,10 @@ export default function RootLayout({
           <Footer />
         </CartProviders>
       </body>
+      <Script
+        type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      ></Script>
     </html>
   );
 }

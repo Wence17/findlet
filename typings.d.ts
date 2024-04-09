@@ -28,7 +28,8 @@ export type Base = {
     price_id:string
     slug:string
     name:string
-    description:string
+    description2:string
+    description:Block[]
     categoryName:string
   }
 
@@ -44,3 +45,12 @@ export type Base = {
     image:any
     price_id:string
   }
+
+  
+interface Block {
+  _key: string
+  _type: 'block'
+  children: span[]
+  markDefs: any[]
+  style: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'blockquote'
+}
