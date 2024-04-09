@@ -5,7 +5,7 @@ import { Facebook, Instagram, TicketCheckIcon, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 shadow mt-auto">
+    <footer className="bg-gray-200 shadow mt-auto">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center md:mb-4 mb-0 ">
@@ -53,7 +53,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <hr className="my-4 border-gray-200 mx-auto dark:border-gray-700" />
+        <hr className="my-4 border-gray-500 mx-auto dark:border-gray-700" />
         <span className="block text-sm text-gray-500 text-center dark:text-gray-400">
           © {new Date().getFullYear()}{" "}
           <Link href="/" className="hover:underline">
