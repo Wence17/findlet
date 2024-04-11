@@ -15,7 +15,7 @@ const links = [
   { name: "Home", href: "/" },
   { name: "Automotive", href: "/Automotive" },
   { name: "Health & Wellness", href: "/Health & Wellness" },
-  { name: "Spy Gadgets", href: "/Spy Gadgets" },
+  { name: "Security/Spy Gadgets", href: "/Spy Gadgets" },
   { name: "Be a Distributor", href: "/Distributor" },
 ];
 
@@ -49,14 +49,14 @@ const Navbar = () => {
               {pathname === link.href ? (
                 <Link
                   href={link.href}
-                  className="text-lg font-semibold text-primary"
+                  className="text-md font-semibold text-primary"
                 >
                   {link.name}
                 </Link>
               ) : (
                 <Link
                   href={link.href}
-                  className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary"
+                  className="text-md font-semibold text-gray-600 transition duration-100 hover:text-primary"
                 >
                   {link.name}
                 </Link>
@@ -66,7 +66,6 @@ const Navbar = () => {
         </nav>
         <nav className="lg:hidden relative ml-24" onClick={()=>setClicked(!clicked)}>
           <Menu />
-      {clicked && <MenuItems />}
         </nav>
             <GoogleTranslate />
 
@@ -87,6 +86,7 @@ const Navbar = () => {
           </Button>
         </div>
       </div>
+      {clicked && <MenuItems />}
     </header>
   );
 };

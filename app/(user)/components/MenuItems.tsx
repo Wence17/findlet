@@ -6,7 +6,7 @@ const links = [
   { name: "Home", href: "/" },
   { name: "Automotive", href: "/Automotive" },
   { name: "Health & Wellness", href: "/Health & Wellness" },
-  { name: "Spy Gadgets", href: "/Spy Gadgets" },
+  { name: "Security/Spy Gadgets", href: "/Spy Gadgets" },
   { name: "Be a Distributor", href: "/Distributor" },
 ];
 
@@ -14,7 +14,7 @@ const MenuItems = () => {
   const pathname = usePathname();
   return (
     <div
-      className={`absolute top-8 z-30 w-[200px] min-h-fit flex flex-col bg-zinc-200 rounded-md py-1 -right-32`}
+      className={` min-h-fit flex flex-col bg-zinc-200 rounded-md py-1`}
     >
       {links.map((link, i) => (
         <div key={i} className="py-1 hover:bg-zinc-300 ">
