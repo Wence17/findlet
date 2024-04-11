@@ -28,7 +28,7 @@ const AllProducts = () => {
 
   return (
     <div className='bg-white'>
-        <div className='mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
+        <div className='mx-auto max-w-2xl md:px-4 md:py-16 px-6 py-24 lg:max-w-7xl lg:px-8'>
             <div className='flex justify-between items-center'>
                 <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
                     Our Products
@@ -60,7 +60,7 @@ const AllProducts = () => {
                                 </p>
                             </div>
                             <p className='text-sm font-medium text-gray-900'>
-                            ₦{product.price}
+                            ₦{product.price - 1}
                             </p>
                         </div>
                     </div>

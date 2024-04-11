@@ -28,8 +28,8 @@ export type Base = {
     price_id:string
     slug:string
     name:string
-    description2:string
-    description:Block[]
+    description:string
+    // description:Block[]
     categoryName:string
   }
 

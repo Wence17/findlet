@@ -9,12 +9,11 @@ import React from 'react'
 
 
 
-
 export async function generateStaticParams() {
     const products = await cachedClient(categoryPathsQuery)
-    // console.log(products)
-  
-    return products
+    const encodedCategory = encodeURIComponent(products?.params?.category);
+    // console.log(encodedCategory)
+    return encodedCategory;
   }
 
 
@@ -27,21 +26,26 @@ const page = async ({ params }: { params: {category:string} }) => {
 
     
     // FacebookPixel.pageView();
-    const category: SimplifiedProduct[] = await client.fetch(categoryQuery, params)
+    const decodedCategory = decodeURIComponent(params.category);
+    const category: SimplifiedProduct[] = await client.fetch(categoryQuery, { category: decodedCategory });
+    // const category: SimplifiedProduct[] = await client.fetch(categoryQuery, params)
+    
 
 
   return (
     <div className='bg-white'>
-    <div className='mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
+    <div className='mx-auto max-w-2xl md:px-4 px-6 lg:max-w-7xl lg:px-8'>
         <div className='flex justify-between items-center'>
             <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
-                Our Products for {params.category}
+                {/* Our Products for {params.category} */}
+                Our Products for {category.map(product => product.categoryName)}
             </h2>
         </div>
         
         <div className='mt-6 grid md:grid-cols-3 gap-x-6 gap-y-10 grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
             {category.map((product) =>(
                 <div key={product._id} className='group relative'>
+                                <Link href={`/product/${product.slug}`}>
                     <div className='aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-80'>
                         <Image 
                         src={product.imageUrl}
@@ -55,18 +59,17 @@ const page = async ({ params }: { params: {category:string} }) => {
                     <div className='mt-4 flex justify-between'>
                         <div>
                             <h3 className='text-sm text-gray-700'>
-                                <Link href={`/product/${product.slug}`}>
                                     {product.name}
-                                </Link>
                             </h3>
                             <p className='mt-1 text-sm text-gray-500'>
                                 {product.categoryName}
                             </p>
                         </div>
                         <p className='text-sm font-medium text-gray-900'>
-                        ₦{product.price}
+                        ₦{product.price - 1}
                         </p>
                     </div>
+                                </Link>
                 </div>
             ))}
         </div>

@@ -13,9 +13,10 @@ import MenuItems from "./MenuItems";
 
 const links = [
   { name: "Home", href: "/" },
-  { name: "Men", href: "/Men" },
-  { name: "Women", href: "/Women" },
-  { name: "Teens", href: "/Teens" },
+  { name: "Automotive", href: "/Automotive" },
+  { name: "Health & Wellness", href: "/Health & Wellness" },
+  { name: "Spy Gadgets", href: "/Spy Gadgets" },
+  { name: "Be a Distributor", href: "/Distributor" },
 ];
 
 const Navbar = () => {

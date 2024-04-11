@@ -54,10 +54,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <div className="mb-4">
               <div className="flex items-end gap-2">
                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
-                  ₦{product.price}
+                  ₦{product.price-1}
                 </span>
                 <span className="mb-0.5 text-red-500 line-through">
-                  ₦{product.price + 5000}
+                  ₦{product.price + 5000 - 1}
                 </span>
               </div>
 
@@ -74,7 +74,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <div className="flex gap-2.5">
               <AddToBag
                 currency="NGN"
-                description={product.description2}
+                description={product.description}
                 image={product.images[0]}
                 name={product.name}
                 price={product.price}
@@ -84,7 +84,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               {/* <Button variant={"secondary"}>Checkout now</Button> */}
               <CheckoutNow
                 currency="NGN"
-                description={product.description2}
+                description={product.description}
                 image={product.images[0]}
                 name={product.name}
                 price={product.price}
@@ -92,19 +92,20 @@ export default async function Page({ params }: { params: { slug: string } }) {
               />
             </div>
 
-            <div className="md:hidden mt-12 text-base text-gray-500 tracking-wide text-justify">
+            {/* <div className="md:hidden mt-12 text-base text-gray-500 tracking-wide text-justify">
             <PortableText 
               value={product.description}
               components={myPortableTextComponents}
             />
-              {/* {product.description} */}
-            </div>
+            </div> */}
 
             <p className="hidden md:flex mt-12 text-base text-gray-500 tracking-wide text-justify">
-              {product.description2}
+              {product.description}
             </p>
           </div>
         </div>
+        {/* iframe for video*/}
+        <div>Hello video</div>
       </div>
     </div>
   );

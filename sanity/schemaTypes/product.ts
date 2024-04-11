@@ -34,14 +34,14 @@ export default defineType({
         ]
       }],
     }),
+    // defineField({
+    //   name: 'description',
+    //   title: 'Description of Product',
+    //   type: 'blockContent',
+    // }),
     defineField({
       name: 'description',
       title: 'Description of Product',
-      type: 'blockContent',
-    }),
-    defineField({
-      name: 'description2',
-      title: 'Description of Product for Destop',
       type: 'text',
     }),
     defineField({
