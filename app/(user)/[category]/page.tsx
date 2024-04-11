@@ -9,13 +9,30 @@ import React from 'react'
 
 
 
-export async function generateStaticParams() {
-    const products = await cachedClient(categoryPathsQuery)
-    const encodedCategory = encodeURIComponent(products?.params?.category);
-    // console.log(encodedCategory)
-    return encodedCategory;
-  }
+// export async function generateStaticParams() {
+//     const products = await cachedClient(categoryPathsQuery)
+//     // const encodedCategory = encodeURIComponent(products?.params?.category);
+//     // console.log(encodedCategory)
+//     return products;
+//   }
 
+export async function generateStaticParams(): Promise<{ params: { category: string } }[]> {
+    const products = await cachedClient(categoryPathsQuery);
+    const encodedCategories: { params: { category: string } }[] = [];
+
+    if (Array.isArray(products)) {
+        for (const product of products) {
+            const encodedCategory = encodeURIComponent(product?.params?.category);
+            encodedCategories.push({ params: { category: encodedCategory } });
+        }
+    } else if (products) {
+        const encodedCategory = encodeURIComponent(products?.params?.category);
+        encodedCategories.push({ params: { category: encodedCategory } });
+    }
+        alert(encodedCategories)
+
+    return encodedCategories;
+}
 
 
 
