@@ -29,7 +29,7 @@ export async function generateStaticParams(): Promise<{ params: { category: stri
         const encodedCategory = encodeURIComponent(products?.params?.category);
         encodedCategories.push({ params: { category: encodedCategory } });
     }
-        alert(encodedCategories)
+        console.log(encodedCategories)
 
     return encodedCategories;
 }
