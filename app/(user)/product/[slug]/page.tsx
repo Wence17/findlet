@@ -99,7 +99,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             />
             </div> */}
 
-            <p className="hidden md:flex mt-12 text-base text-gray-500 tracking-wide text-justify">
+            <p className="flex mt-12 text-base text-gray-500 tracking-wide text-justify">
               {product.description}
             </p>
           </div>
