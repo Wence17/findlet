@@ -6,7 +6,7 @@ import { useShoppingCart } from "use-shopping-cart";
 
 const AddToBag = ({
   currency,
-  description,
+  // description,
   image,
   name,
   price,
@@ -16,7 +16,7 @@ const AddToBag = ({
 
   const product = {
     name: name,
-    description: description,
+    // description: description,
     price: price,
     currency: currency,
     image: urlForImage(image),

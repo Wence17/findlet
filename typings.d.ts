@@ -39,7 +39,7 @@ export type Base = {
 
   interface ProductCart{
     name:string
-    description:Block[]
+    // description:Block[]
     price:number
     currency:string
     image:any

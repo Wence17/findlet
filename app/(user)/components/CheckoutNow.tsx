@@ -7,7 +7,7 @@ import FacebookPixel from "react-facebook-pixel";
 
 const CheckoutNow = ({
   currency,
-  description,
+  // description,
   image,
   name,
   price,
@@ -21,7 +21,7 @@ const CheckoutNow = ({
 
   const product = {
     name: name,
-    description: description,
+    // description: description,
     price: price,
     currency: currency,
     image: urlForImage(image),
