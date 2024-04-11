@@ -28,7 +28,7 @@ const AllProducts = () => {
 
   return (
     <div className='bg-white'>
-        <div className='mx-auto max-w-2xl md:px-4 md:py-16 px-6 py-24 lg:max-w-7xl lg:px-8'>
+        <div className='mx-auto max-w-2xl px-4 py-16 md:px-6 md:py-24 lg:max-w-7xl lg:px-8'>
             <div className='flex justify-between items-center'>
                 <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
                     Want To Be A Distributor?
