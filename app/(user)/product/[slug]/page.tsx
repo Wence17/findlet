@@ -92,16 +92,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
               />
             </div>
 
-            {/* <div className="md:hidden mt-12 text-base text-gray-500 tracking-wide text-justify">
+            <div className="md:hidden mt-12 text-base text-gray-500 tracking-wide text-justify">
             <PortableText 
               value={product.description}
               components={myPortableTextComponents}
             />
-            </div> */}
+            </div>
 
-            <p className="flex mt-12 text-base text-gray-500 tracking-wide text-justify">
+            {/* <p className="flex mt-12 text-base text-gray-500 tracking-wide text-justify">
               {product.description}
-            </p>
+            </p> */}
           </div>
         </div>
         {/* iframe for video*/}

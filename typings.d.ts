@@ -28,8 +28,8 @@ export type Base = {
     price_id:string
     slug:string
     name:string
-    description:string
-    // description:Block[]
+    // description:string
+    description:Block[]
     categoryName:string
   }
 
@@ -39,7 +39,7 @@ export type Base = {
 
   interface ProductCart{
     name:string
-    description:string
+    description:Block[]
     price:number
     currency:string
     image:any

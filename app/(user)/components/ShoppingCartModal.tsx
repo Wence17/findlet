@@ -72,7 +72,7 @@ const ShoppingCartModal = () => {
                             <p className="ml-4">₦{entry.price-1}</p>
                           </div>
                           <p className="mt-1 text-sm text-gray-500 line-clamp-2">
-                            {entry.description}
+                            {/* {entry.description} */}
                           </p>
                         </div>
 
