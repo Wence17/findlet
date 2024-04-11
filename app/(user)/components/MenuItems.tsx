@@ -14,7 +14,7 @@ const MenuItems = () => {
   const pathname = usePathname();
   return (
     <div
-      className={`absolute top-8 z-30 w-[170px] min-h-fit flex flex-col bg-zinc-200 rounded-md py-1 -right-32`}
+      className={`absolute top-8 z-30 w-[200px] min-h-fit flex flex-col bg-zinc-200 rounded-md py-1 -right-32`}
     >
       {links.map((link, i) => (
         <div key={i} className="py-1 hover:bg-zinc-300 ">
