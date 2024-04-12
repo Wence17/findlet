@@ -16,7 +16,7 @@ const links = [
   { name: "Automotive", href: "/Automotive" },
   { name: "Health & Wellness", href: "/Health & Wellness" },
   { name: "Security/Spy Gadgets", href: "/Spy Gadgets" },
-  { name: "Be a Distributor", href: "/Distributor" },
+  { name: "Become a Distributor", href: "/Distributor" },
 ];
 
 const Navbar = () => {

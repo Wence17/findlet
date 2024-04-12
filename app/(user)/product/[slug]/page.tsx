@@ -8,6 +8,7 @@ import AddToBag from "../../components/AddToBag";
 import CheckoutNow from "../../components/CheckoutNow";
 import { myPortableTextComponents } from "../../components/myPortableTextComponent";
 import { PortableText } from "@portabletext/react";
+import ProductTestimonial from "../../components/ProductTestimonial";
 
 
 export async function generateStaticParams() {
@@ -106,6 +107,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </div>
         {/* iframe for video*/}
         <div>Hello video</div>
+        <ProductTestimonial categoryName={product.categoryName} />
       </div>
     </div>
   );

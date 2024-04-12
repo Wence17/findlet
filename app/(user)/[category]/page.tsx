@@ -29,7 +29,7 @@ export async function generateStaticParams(): Promise<{ params: { category: stri
         const encodedCategory = encodeURIComponent(products?.params?.category);
         encodedCategories.push({ params: { category: encodedCategory } });
     }
-        console.log(encodedCategories)
+        // console.log(encodedCategories)
 
     return encodedCategories;
 }
@@ -46,7 +46,6 @@ const page = async ({ params }: { params: {category:string} }) => {
     const decodedCategory = decodeURIComponent(params.category);
     const category: SimplifiedProduct[] = await client.fetch(categoryQuery, { category: decodedCategory });
     // const category: SimplifiedProduct[] = await client.fetch(categoryQuery, params)
-    
 
 
   return (
@@ -54,8 +53,8 @@ const page = async ({ params }: { params: {category:string} }) => {
     <div className='mx-auto max-w-2xl md:px-4 px-6 lg:max-w-7xl lg:px-8'>
         <div className='flex justify-between items-center'>
             <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
-                {/* Our Products for {params.category} */}
-                Our Products for {category.map(product => product.categoryName)}
+                Our Products for {decodedCategory}
+                {/* Our Products for {category.map(product => product.categoryName)} */}
             </h2>
         </div>
         
