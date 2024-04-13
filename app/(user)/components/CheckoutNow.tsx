@@ -4,6 +4,9 @@ import { urlForImage } from "@/sanity/lib/image";
 import { ProductCart } from "@/typings";
 import { useShoppingCart } from "use-shopping-cart";
 import FacebookPixel from "react-facebook-pixel";
+import { paystackPay } from "./action";
+import { useState } from "react";
+import CheckoutEmail from "./CheckoutEmail";
 
 const CheckoutNow = ({
   currency,
@@ -13,30 +16,26 @@ const CheckoutNow = ({
   price,
   price_id,
 }: ProductCart) => {
-  const { checkoutSingleItem } = useShoppingCart();
+  const [clicked, setClicked] = useState(false);
 
-  function buyNow(priceID: string) {
-    checkoutSingleItem(priceID);
-  }
-
-  const product = {
-    name: name,
-    // description: description,
-    price: price,
-    currency: currency,
-    image: urlForImage(image),
-    id: price_id,
-  };
+  // console.log("hecking out now",product.price_id)
   return (
-    <Button
-      variant={"secondary"}
-      onClick={() => {
-        buyNow(product.id);
-        // FacebookPixel.track("ButtonClicked", { buttonType: "CheckOutNow" });
-      }}
-    >
-      Checkout Now
-    </Button>
+    <div className="relative">
+      {clicked && (
+        <CheckoutEmail
+          currency="NGN"
+          // description={product.description}
+          image={image}
+          name={name}
+          price={price}
+          price_id={price_id}
+        />
+      )}
+      <Button variant={"secondary"} onClick={() => setClicked(true)}>
+        Checkout Now
+      </Button>
+
+    </div>
   );
 };
 

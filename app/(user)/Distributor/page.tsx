@@ -213,7 +213,7 @@ const AllProducts = () => {
                   </p>
                 </div>
                 <p className="text-sm font-medium text-gray-900">
-                  ₦{product.price - 1}
+                  ₦{product.price}
                 </p>
               </div>
             </div>
@@ -226,9 +226,9 @@ const AllProducts = () => {
             <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
               <Mail className="text-2xl mb-2" />
               <h4 className=" ">Email</h4>
-              <h5 className=" ">obimkasomto@gmail.com</h5>
+              <h5 className=" ">findlet142@gmail.com</h5>
               <Link
-                href={"mailTo:obimkasomto@gmail.com"}
+                href={"mailTo:findlet142@gmail.com"}
                 target="_blank"
                 className="mt-3 inline-block text-xs"
               >
@@ -239,9 +239,9 @@ const AllProducts = () => {
             <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
               <MessageCircleMore className="text-2xl mb-2" />
               <h4 className="text-center ">Messenger</h4>
-              <h5 className="text-center ">Wence_Dev</h5>
+              <h5 className="text-center ">FindLet</h5>
               <Link
-                href={"https://m.me/wence.henry"}
+                href={"https://m.me/258738313985769?source=qr_link_share"}
                 target="_blank"
                 className="mt-3 inline-block text-xs"
               >
@@ -252,9 +252,9 @@ const AllProducts = () => {
             <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
               <BsWhatsapp className="text-2xl mb-2" />
               <h4 className="text-center ">WhatsApp</h4>
-              <h5 className="text-center ">+2349067831050</h5>
+              <h5 className="text-center ">+2348074902241</h5>
               <Link
-                href={"https://api.whatsapp.com/send?phone=2349067831050"}
+                href={"https://api.whatsapp.com/send?phone=2348074902241"}
                 target="_blank"
                 className="mt-3 inline-block text-xs"
               >

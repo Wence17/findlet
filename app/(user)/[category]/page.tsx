@@ -41,15 +41,16 @@ export async function generateStaticParams(): Promise<{ params: { category: stri
 
 const page = async ({ params }: { params: {category:string} }) => {
 
-    
+    // console.log(params.category)
     // FacebookPixel.pageView();
     const decodedCategory = decodeURIComponent(params.category);
     const category: SimplifiedProduct[] = await client.fetch(categoryQuery, { category: decodedCategory });
     // const category: SimplifiedProduct[] = await client.fetch(categoryQuery, params)
+    // console.log(decodedCategory)
 
 
   return (
-    <div className='bg-white'>
+    <div className='bg-white my-5'>
     <div className='mx-auto max-w-2xl md:px-4 px-6 lg:max-w-7xl lg:px-8'>
         <div className='flex justify-between items-center'>
             <h2 className='text-2xl font-bold tracking-tight text-gray-900'>
@@ -82,7 +83,7 @@ const page = async ({ params }: { params: {category:string} }) => {
                             </p>
                         </div>
                         <p className='text-sm font-medium text-gray-900'>
-                        ₦{product.price - 1}
+                        ₦{product.price}
                         </p>
                     </div>
                                 </Link>

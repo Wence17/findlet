@@ -15,7 +15,7 @@ const links = [
   { name: "Home", href: "/" },
   { name: "Automotive", href: "/Automotive" },
   { name: "Health & Wellness", href: "/Health & Wellness" },
-  { name: "Security/Spy Gadgets", href: "/Spy Gadgets" },
+  { name: "Security/Spy Gadgets", href: "/Security & Spy Gadgets" },
   { name: "Become a Distributor", href: "/Distributor" },
 ];
 

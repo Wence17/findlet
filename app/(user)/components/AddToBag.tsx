@@ -20,7 +20,7 @@ const AddToBag = ({
     price: price,
     currency: currency,
     image: urlForImage(image),
-    id: price_id,
+    price_id: price_id,
   };
   return (
     <Button

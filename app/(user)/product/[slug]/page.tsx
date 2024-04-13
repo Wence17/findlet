@@ -9,6 +9,8 @@ import CheckoutNow from "../../components/CheckoutNow";
 import { myPortableTextComponents } from "../../components/myPortableTextComponent";
 import { PortableText } from "@portabletext/react";
 import ProductTestimonial from "../../components/ProductTestimonial";
+import Link from "next/link";
+import CheckoutEmail from "../../components/CheckoutEmail";
 
 
 export async function generateStaticParams() {
@@ -23,8 +25,7 @@ export const revalidate = 60;
 export default async function Page({ params }: { params: { slug: string } }) {
   const product: Products = await client.fetch(productQuery, params);
  
-
-
+// console.log(product)
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 md:px-8">
@@ -43,8 +44,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
             <div className="mb-6 flex items-center gap-3 md:mb-10">
               <Button className="rounded-full gap-x-2">
+                <Link href={"#productTestimonial"} className="flex space-x-2">
                 <span className="text-sm">4.2</span>
                 <Star className="h-5 w-5" />
+                  
+                </Link>
               </Button>
 
               <span className="text-sm text-gray-500 transition duration-100">
@@ -55,10 +59,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <div className="mb-4">
               <div className="flex items-end gap-2">
                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
-                  ₦{product.price-1}
+                  ₦{product.price}
                 </span>
                 <span className="mb-0.5 text-red-500 line-through">
-                  ₦{product.price + 5000 - 1}
+                  ₦{product.price + 5000}
                 </span>
               </div>
 
@@ -80,7 +84,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 name={product.name}
                 price={product.price}
                 key={product._id}
-                price_id={product.price_id}
+                price_id ={product.stripe_id}
               />
               {/* <Button variant={"secondary"}>Checkout now</Button> */}
               <CheckoutNow
@@ -89,7 +93,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 image={product.images[0]}
                 name={product.name}
                 price={product.price}
-                price_id={product.price_id}
+                price_id={product.stripe_id}
               />
             </div>
 
@@ -106,8 +110,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
           </div>
         </div>
         {/* iframe for video*/}
-        <div>Hello video</div>
+        <div className="mt-48">Hello video</div>
+        {/* <div id="productTestimonial"> */}
         <ProductTestimonial categoryName={product.categoryName} />
+        {/* </div> */}
+        
       </div>
     </div>
   );
