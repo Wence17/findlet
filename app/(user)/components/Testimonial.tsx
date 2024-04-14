@@ -265,7 +265,7 @@ const Testimonials = () => {
                       </div>
                     </div>
 
-                    <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                    <footer className="mt-4 text-sm font-extrabold text-gray-700 md:mt-6">
                       &mdash; {testimonial.name} from {testimonial.country}
                     </footer>
                   </blockquote>
@@ -429,7 +429,7 @@ const Testimonials = () => {
                       </div>
                     </div>
 
-                    <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                    <footer className="mt-4 text-sm font-extrabold text-gray-700 md:mt-6">
                       &mdash; {testimonial.name} from {testimonial.country}
                     </footer>
                   </blockquote>
@@ -593,7 +593,7 @@ const Testimonials = () => {
                       </div>
                     </div>
 
-                    <footer className="mt-4 text-sm font-extrabold text-gray-700 sm:mt-6">
+                    <footer className="mt-4 text-sm font-extrabold text-gray-700 md:mt-6">
                       &mdash; {testimonial.name} from {testimonial.country}
                     </footer>
                   </blockquote>

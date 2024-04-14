@@ -1,10 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { urlForImage } from "@/sanity/lib/image";
 import { ProductCart } from "@/typings";
-import { useShoppingCart } from "use-shopping-cart";
-import FacebookPixel from "react-facebook-pixel";
-import { paystackPay } from "./action";
 import { useState } from "react";
 import CheckoutEmail from "./CheckoutEmail";
 
@@ -31,7 +27,7 @@ const CheckoutNow = ({
           price_id={price_id}
         />
       )}
-      <Button variant={"secondary"} onClick={() => setClicked(true)}>
+      <Button variant={"secondary"} onClick={() => setClicked(!clicked)}>
         Checkout Now
       </Button>
 

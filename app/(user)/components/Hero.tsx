@@ -6,6 +6,11 @@ import { urlForImage } from "@/sanity/lib/image";
 import Link from "next/link";
 import { Heroes } from "@/typings";
 
+// Opt out of caching for all data requests in the route segment
+export const dynamic = 'force-dynamic'
+
+
+
 const Hero = async () => {
   const heroes:Heroes[] = await client.fetch(heroQuery);
   return (
@@ -49,13 +54,13 @@ const Hero = async () => {
       </div>
       <div className="hidden lg:flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="flex h-12 w-64 divide-x overflow-hidden rounded-lg border">
-            <Link href="/Men" className="flex w-1/3 items-center justify-center text-gray-500 trancsition duration-100 hover:bg-gray-100 active:bg-gray-200">
+            <Link href="#" className="flex w-1/3 items-center justify-center text-gray-500 trancsition duration-100 hover:bg-gray-100 active:bg-gray-200">
                 Men
             </Link>
-            <Link href="/Women" className="flex w-1/3 items-center justify-center text-gray-500 trancsition duration-100 hover:bg-gray-100 active:bg-gray-200">
+            <Link href="#" className="flex w-1/3 items-center justify-center text-gray-500 trancsition duration-100 hover:bg-gray-100 active:bg-gray-200">
                 Women
             </Link>
-            <Link href="/Teens" className="flex w-1/3 items-center justify-center text-gray-500 trancsition duration-100 hover:bg-gray-100 active:bg-gray-200">
+            <Link href="#" className="flex w-1/3 items-center justify-center text-gray-500 trancsition duration-100 hover:bg-gray-100 active:bg-gray-200">
                 Teens
             </Link>
         </div>

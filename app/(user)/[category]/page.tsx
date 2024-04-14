@@ -6,6 +6,9 @@ import Link from 'next/link'
 import React from 'react'
 // import FacebookPixel from 'react-facebook-pixel';
 
+// Opt out of caching for all data requests in the route segment
+export const dynamic = 'force-dynamic'
+
 
 
 

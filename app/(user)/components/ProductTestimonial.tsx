@@ -108,7 +108,7 @@ const ProductTestimonial = ({ categoryName }: { categoryName: string }) => {
 
           <div className="-mx-6 lg:col-span-2 lg:mx-0">
             <div id="keen-slider" className="keen-slider">
-              {categoryName === "Spy Gadgets"
+              {categoryName === "Security & Spy Gadgets"
                 ? testimonials.invisible_ink_pens.map((testimonial) => (
                     <div className="keen-slider__slide" key={testimonial.id}>
                       <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
@@ -267,7 +267,7 @@ const ProductTestimonial = ({ categoryName }: { categoryName: string }) => {
                           </div>
                         </div>
 
-                        <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                        <footer className="mt-4 text-sm font-extrabold text-gray-700 md:mt-6">
                           &mdash; {testimonial.name} from {testimonial.country}
                         </footer>
                       </blockquote>
@@ -432,7 +432,7 @@ const ProductTestimonial = ({ categoryName }: { categoryName: string }) => {
                           </div>
                         </div>
 
-                        <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                        <footer className="mt-4 text-sm font-extrabold text-gray-700 md:mt-6">
                           &mdash; {testimonial.name} from {testimonial.country}
                         </footer>
                       </blockquote>
@@ -596,7 +596,7 @@ const ProductTestimonial = ({ categoryName }: { categoryName: string }) => {
                           </div>
                         </div>
 
-                        <footer className="mt-4 text-sm font-extrabold text-gray-700 sm:mt-6">
+                        <footer className="mt-4 text-sm font-extrabold text-gray-700 md:mt-6">
                           &mdash; {testimonial.name} from {testimonial.country}
                         </footer>
                       </blockquote>

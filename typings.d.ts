@@ -54,3 +54,12 @@ interface Block {
   markDefs: any[]
   style: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'blockquote'
 }
+
+type Inputs = {
+  firstName: string
+  lastName: string
+  email: string
+  phoneNumber: string
+  subject: string
+  message: string
+}

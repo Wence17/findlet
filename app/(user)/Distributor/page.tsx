@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
+import distributor from "@/public/assets/images/Distributor.jpg";
 // import FacebookPixel from 'react-facebook-pixel';
 
 const AllProducts = () => {
@@ -34,9 +35,15 @@ const AllProducts = () => {
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 md:px-6 lg:max-w-7xl lg:px-8">
         <div className="flex justify-between items-center">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+          {/* <h2 className="text-2xl font-bold tracking-tight text-gray-900">
             Want To Be A Distributor?
-          </h2>
+          </h2> */}
+          <Image
+            src={distributor}
+            // src={'/assets/images/Veen-bg-2.jpg'}
+            alt={"veen"}
+            className="md:h-fit w-fit object-cover object-center shadow-lg rounded-lg"
+          />
         </div>
         <div className="flex justify-between items-center">
           <p className="text-2xl font-semibold tracking-tight text-gray-600 pt-6">
@@ -172,12 +179,12 @@ const AllProducts = () => {
                   Custom Pack
                 </p>
                 <p className="text-2xl font-extrabold text-blue-600 text-center">
-                  Contact us
+                  15% Discount
                 </p>
               </div>
               <div className="mt-4 flex justify-between">
                 <h3 className="text-sm font-medium text-gray-700">
-                  60 Units of Each Product and above
+                  80 Units of Each Product and above
                 </h3>
               </div>
             </div>
@@ -219,86 +226,50 @@ const AllProducts = () => {
             </div>
           ))}
         </div>
-        
       </div>
       <div className="bg-gray-100 my-5 mx-auto">
-          <div className="flex flex-col md:flex-row justify-between gap-5 contact_options md:mx-24">
-            <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
-              <Mail className="text-2xl mb-2" />
-              <h4 className=" ">Email</h4>
-              <h5 className=" ">findlet142@gmail.com</h5>
-              <Link
-                href={"mailTo:findlet142@gmail.com"}
-                target="_blank"
-                className="mt-3 inline-block text-xs"
-              >
-                {" "}
-                Send a message
-              </Link>
-            </article>
-            <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
-              <MessageCircleMore className="text-2xl mb-2" />
-              <h4 className="text-center ">Messenger</h4>
-              <h5 className="text-center ">FindLet</h5>
-              <Link
-                href={"https://m.me/258738313985769?source=qr_link_share"}
-                target="_blank"
-                className="mt-3 inline-block text-xs"
-              >
-                {" "}
-                Send a message
-              </Link>
-            </article>
-            <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
-              <BsWhatsapp className="text-2xl mb-2" />
-              <h4 className="text-center ">WhatsApp</h4>
-              <h5 className="text-center ">+2348074902241</h5>
-              <Link
-                href={"https://api.whatsapp.com/send?phone=2348074902241"}
-                target="_blank"
-                className="mt-3 inline-block text-xs"
-              >
-                {" "}
-                Send a message
-              </Link>
-            </article>
-          </div>
-          {/* End of contact options */}
-          {/* <form
-            // ref={form}
-            // onSubmit={sendEmail}
-            className="flex flex-col gap-5"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Full Name"
-              required
-              className="w-full p-5 rounded-lg bg-transparent border-2 border-solid border-color-primary-variant resize-none text-white"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="w-full p-5 rounded-lg bg-transparent border-2 border-solid border-color-primary-variant resize-none text-white"
-            />
-            <textarea
-              name="message"
-              cols={30}
-              rows={4}
-              placeholder="Your Message"
-              required
-              className="w-full p-5 rounded-lg bg-transparent border-2 border-solid border-color-primary-variant resize-none text-white"
-            />
-            <button
-              type="submit"
-              className="w-max py-[0.75rem] inline-block px-[1.2rem] border rounded-[0.4rem] cursor-pointer border-color-primary border-solid transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:text-color-bg hover:border-transparent bg-color-primary text-color-bg"
+        <div className="flex flex-col md:flex-row justify-between gap-5 contact_options md:mx-24">
+          <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
+            <Mail className="text-2xl mb-2" />
+            <h4 className=" ">Email</h4>
+            <h5 className=" ">findlet142@gmail.com</h5>
+            <Link
+              href={"mailTo:findlet142@gmail.com"}
+              target="_blank"
+              className="mt-3 inline-block text-xs"
             >
-              Send Message
-            </button>
-          </form> */}
+              {" "}
+              Send a message
+            </Link>
+          </article>
+          <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
+            <MessageCircleMore className="text-2xl mb-2" />
+            <h4 className="text-center ">Messenger</h4>
+            <h5 className="text-center ">FindLet</h5>
+            <Link
+              href={"https://m.me/258738313985769?source=qr_link_share"}
+              target="_blank"
+              className="mt-3 inline-block text-xs"
+            >
+              {" "}
+              Send a message
+            </Link>
+          </article>
+          <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
+            <BsWhatsapp className="text-2xl mb-2" />
+            <h4 className="text-center ">WhatsApp</h4>
+            <h5 className="text-center ">+2348074902241</h5>
+            <Link
+              href={"https://api.whatsapp.com/send?phone=2348074902241"}
+              target="_blank"
+              className="mt-3 inline-block text-xs"
+            >
+              {" "}
+              Send a message
+            </Link>
+          </article>
         </div>
+      </div>
     </div>
   );
 };

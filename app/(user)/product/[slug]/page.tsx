@@ -12,7 +12,6 @@ import ProductTestimonial from "../../components/ProductTestimonial";
 import Link from "next/link";
 import CheckoutEmail from "../../components/CheckoutEmail";
 
-
 export async function generateStaticParams() {
   const products = await cachedClient(productPathsQuery);
   // console.log(products)
@@ -24,8 +23,8 @@ export const revalidate = 60;
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const product: Products = await client.fetch(productQuery, params);
- 
-// console.log(product)
+
+  // console.log(product)
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 md:px-8">
@@ -43,16 +42,19 @@ export default async function Page({ params }: { params: { slug: string } }) {
             </div>
 
             <div className="mb-6 flex items-center gap-3 md:mb-10">
-              <Button className="rounded-full gap-x-2">
+              <Button className="rounded-full gap-x-2 active:bg-yellow-500">
                 <Link href={"#productTestimonial"} className="flex space-x-2">
-                <span className="text-sm">4.2</span>
-                <Star className="h-5 w-5" />
-                  
+                  <span className="text-sm">4.2</span>
+                  <Star className="h-5 w-5" />
                 </Link>
               </Button>
 
               <span className="text-sm text-gray-500 transition duration-100">
-                56 Ratings
+                {product.categoryName === "Automotive"
+                  ? "56 Ratings"
+                  : product.categoryName === "Health & Wellness"
+                  ? "79 Ratings"
+                  : "93 Ratings"}
               </span>
             </div>
 
@@ -84,7 +86,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 name={product.name}
                 price={product.price}
                 key={product._id}
-                price_id ={product.stripe_id}
+                price_id={product.stripe_id}
               />
               {/* <Button variant={"secondary"}>Checkout now</Button> */}
               <CheckoutNow
@@ -98,10 +100,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
             </div>
 
             <div className="md:hidden mt-12 text-base text-gray-500 tracking-wide text-justify">
-            <PortableText 
-              value={product.description}
-              components={myPortableTextComponents}
-            />
+              <PortableText
+                value={product.description}
+                components={myPortableTextComponents}
+              />
             </div>
 
             {/* <p className="flex mt-12 text-base text-gray-500 tracking-wide text-justify">
@@ -114,7 +116,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
         {/* <div id="productTestimonial"> */}
         <ProductTestimonial categoryName={product.categoryName} />
         {/* </div> */}
-        
       </div>
     </div>
   );

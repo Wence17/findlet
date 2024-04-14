@@ -71,7 +71,7 @@ const CheckoutEmail = ({
   };
 
   return (
-    <div className='absolute z-20 min-h-fit flex flex-col bg-zinc-200 rounded-md py-1 bottom-9 w-[500px]'>
+    <div className='absolute z-20 min-h-fit flex flex-col bg-zinc-200 rounded-md py-1 bottom-9 lg:w-[500px] md:w-[320px] w-fit -left-20 -right-20'>
         <div className="m-4 ">
               <input
                 id="userEmail"

@@ -417,7 +417,7 @@ export const testimonials: Testimonialstype = {
     ],
     "glass_cleaners": [
         {
-            "name": "Fatima", "text": "I am amazed by the results of this glass cleaner. It worked wonders on my car windows. Thank you!", "id": 1, "country": "Nigeria",
+            "name": "Ejima", "text": "I am amazed by the results of this glass cleaner. It worked wonders on my car windows. Thank you!", "id": 1, "country": "Nigeria",
             title: ""
         },
         {
