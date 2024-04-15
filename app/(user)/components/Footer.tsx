@@ -111,35 +111,35 @@ const Footer = () => {
                 className="relative  w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-gray-400  hover:bg-gray-900 "
               >
                 <BiLogoTiktok className="w-[1.25rem] h-[0.875rem] text-white" />
-                <span className="md:sr-only">Tiktok</span>
+                <span className="sr-only">Tiktok</span>
               </Link>
           <Link
                 href="https://whatsapp.com/channel/0029VaZdYTADeON7CwOTUa2g"
                 className="relative  w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-gray-400  hover:bg-gray-900 "
               >
                 <FaWhatsapp className="w-[1.25rem] h-[0.875rem] text-white" />
-                <span className="md:sr-only">WhatsApp</span>
+                <span className="sr-only">WhatsApp</span>
               </Link>
           <Link
                 href="https://www.instagram.com/official_findlet?igsh=MTdib2kzOW80N3F4cQ=="
                 className="relative  w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-gray-400  hover:bg-gray-900 "
               >
                 <Instagram className="w-[1.25rem] h-[0.875rem] text-white" />
-                <span className="md:sr-only">Instagram</span>
+                <span className="sr-only">Instagram</span>
               </Link>
           <Link
                 href="https://www.facebook.com/profile.php?id=61556670767727&mibextid=ZbWKwL"
                 className="relative  w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-gray-400  hover:bg-gray-900 "
               >
                 <Facebook className="w-[1.25rem] h-[0.875rem] text-white" />
-                <span className="md:sr-only">Facebook</span>
+                <span className="sr-only">Facebook</span>
               </Link>
               <Link
                 href="https://www.youtube.com/@official_findlet"
                 className="relative  w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-gray-400  hover:bg-gray-900 "
               >
                 <Youtube className="w-[1.25rem] h-[0.875rem] text-white" />
-                <span className="flex md:sr-only">YouTube</span>
+                <span className="sr-only">YouTube</span>
               </Link>
         </div>
       </div>
