@@ -45,7 +45,7 @@ const Navbar = () => {
             className="w-24 md:w-40 cursor-pointer"
           />
         </Link>
-        <nav className="hidden gap-12 lg:flex 2xl:ml-16">
+        <nav className="hidden gap-4 lg:flex 2xl:ml-16">
           {links.map((link, i) => (
             <div key={i}>
               {pathname === link.href ? (
