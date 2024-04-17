@@ -251,7 +251,7 @@ const AllProducts = () => {
       </blockquote>
       <figcaption className="flex items-center justify-center mt-6 space-x-3">
         <Image
-          className="w-6 h-6 rounded-full"
+          className="w-16 h-16 rounded-xl"
           src={francis}
           alt="profile picture"
         />
@@ -288,7 +288,7 @@ const AllProducts = () => {
       </blockquote>
       <figcaption className="flex items-center justify-center mt-6 space-x-3">
         <Image
-          className="w-6 h-6 rounded-full"
+          className="w-16 h-16 rounded-xl"
           src={ann}
           alt="profile picture"
         />
