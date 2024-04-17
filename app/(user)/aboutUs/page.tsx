@@ -70,10 +70,10 @@ const page = () => {
                   className="block lg:hidden mb-9 mx-auto"
                 />
                 <h2 className="font-manrope font-bold text-4xl lg:text-5xl text-black mb-9 max-lg:text-center">
-                  We are Creative Since 2015
+                  We are Creative Since 2020
                 </h2>
                 <p className="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
-                  Founded in 2015, FindLet started as a small team of
+                  Founded in 2020, FindLet started as a small team of
                   entrepreneurs with a big vision. We wanted to build more than
                   just an online store; we aimed to create a community where
                   customers could find products that resonate with their

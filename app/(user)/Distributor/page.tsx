@@ -134,7 +134,7 @@ const AllProducts = () => {
                   Starter Pack
                 </p>
                 <p className="text-2xl font-extrabold text-blue-600 text-center">
-                  0% Discount
+                  10% Discount
                 </p>
               </div>
               <div className="mt-4 flex justify-between">
@@ -149,7 +149,7 @@ const AllProducts = () => {
                   Business Builder Pack
                 </p>
                 <p className="text-2xl font-extrabold text-blue-600 text-center">
-                  5% Discount
+                  20% Discount
                 </p>
               </div>
               <div className="mt-4 flex justify-between">
@@ -164,7 +164,7 @@ const AllProducts = () => {
                   Premium Pack
                 </p>
                 <p className="text-2xl font-extrabold text-blue-600 text-center">
-                  10% Discount
+                  30% Discount
                 </p>
               </div>
               <div className="mt-4 flex justify-between">
@@ -179,7 +179,7 @@ const AllProducts = () => {
                   Custom Pack
                 </p>
                 <p className="text-2xl font-extrabold text-blue-600 text-center">
-                  15% Discount
+                  40% Discount
                 </p>
               </div>
               <div className="mt-4 flex justify-between">

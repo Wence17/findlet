@@ -496,7 +496,1066 @@ export const testimonials: Testimonialstype = {
             "name": "Zara", "text": "I'm amazed by how well this glass cleaner works. It removed all the dirt and grime from my car windows, leaving them sparkling clean.", "id": 20, "country": "Kenya",
             title: ""
         }
-    ]
+    ],
+    "hydrozone_flashlights": [
+        {
+          "name": "Kwame",
+          "text": "The Hydro Zoom flashlight is a game-changer!",
+          "id": 1,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Fatima",
+          "text": "Impressed by its durability and brightness!",
+          "id": 2,
+          "country": "Nigeria",
+          title: ""
+        },
+        {
+          "name": "Tariq",
+          "text": "Perfect for outdoor adventures!",
+          "id": 3,
+          "country": "Egypt",
+          title: ""
+        },
+        {
+          "name": "Aisha",
+          "text": "Brightest flashlight I've ever owned!",
+          "id": 4,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Mandela",
+          "text": "Great for camping and emergencies!",
+          "id": 5,
+          "country": "South Africa",
+          title: ""
+        },
+        {
+          "name": "Nala",
+          "text": "Compact yet powerful!",
+          "id": 6,
+          "country": "Tanzania",
+          title: ""
+        },
+        {
+          "name": "Juma",
+          "text": "Long-lasting battery life, highly recommended!",
+          "id": 7,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Zara",
+          "text": "Must-have for every household!",
+          "id": 8,
+          "country": "Morocco",
+          title: ""
+        },
+        {
+          "name": "Sadio",
+          "text": "Survival essential!",
+          "id": 9,
+          "country": "Senegal",
+          title: ""
+        },
+        {
+          "name": "Yohannes",
+          "text": "Love the adjustable zoom feature!",
+          "id": 10,
+          "country": "Ethiopia",
+          title: ""
+        },
+        {
+          "name": "Amira",
+          "text": "Works like a charm!",
+          "id": 11,
+          "country": "Egypt",
+          title: ""
+        },
+        {
+          "name": "Malik",
+          "text": "Reliable in any situation!",
+          "id": 12,
+          "country": "Nigeria",
+          title: ""
+        },
+        {
+          "name": "Malaika",
+          "text": "Great value for money!",
+          "id": 13,
+          "country": "Tanzania",
+          title: ""
+        },
+        {
+          "name": "Habiba",
+          "text": "Compact and lightweight design is perfect for travel!",
+          "id": 14,
+          "country": "Morocco",
+          title: ""
+        },
+        {
+          "name": "Tendai",
+          "text": "Bright enough to light up the night!",
+          "id": 15,
+          "country": "Zimbabwe",
+          title: ""
+        },
+        {
+          "name": "Issa",
+          "text": "Sturdy construction, built to last!",
+          "id": 16,
+          "country": "Senegal",
+          title: ""
+        },
+        {
+          "name": "Ayanda",
+          "text": "Easy to use, even for kids!",
+          "id": 17,
+          "country": "South Africa",
+          title: ""
+        },
+        {
+          "name": "Rashid",
+          "text": "Fantastic customer service!",
+          "id": 18,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Sanaa",
+          "text": "Makes power outages less stressful!",
+          "id": 19,
+          "country": "Algeria",
+          title: ""
+        },
+        {
+          "name": "Kofi",
+          "text": "Highly recommended for hikers!",
+          "id": 20,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Halima",
+          "text": "No more fumbling in the dark!",
+          "id": 21,
+          "country": "Nigeria",
+          title: ""
+        },
+        {
+          "name": "Amadou",
+          "text": "Compact yet powerful!",
+          "id": 22,
+          "country": "Mali",
+          title: ""
+        },
+        {
+          "name": "Nuru",
+          "text": "Great addition to my emergency kit!",
+          "id": 23,
+          "country": "Tanzania",
+          title: ""
+        },
+        {
+          "name": "Leila",
+          "text": "Provides peace of mind during storms!",
+          "id": 24,
+          "country": "Egypt",
+          title: ""
+        },
+        {
+          "name": "Mwamba",
+          "text": "The best flashlight I've ever owned!",
+          "id": 25,
+          "country": "Zambia",
+          title: ""
+        },
+        {
+          "name": "Maha",
+          "text": "Durable and reliable!",
+          "id": 26,
+          "country": "Sudan",
+          title: ""
+        },
+        {
+          "name": "Tariro",
+          "text": "Bright light, small package!",
+          "id": 27,
+          "country": "Zimbabwe",
+          title: ""
+        },
+        {
+          "name": "Dikeledi",
+          "text": "Perfect for night fishing!",
+          "id": 28,
+          "country": "Botswana",
+          title: ""
+        },
+        {
+          "name": "Idrissa",
+          "text": "Great for roadside emergencies!",
+          "id": 29,
+          "country": "Senegal",
+          title: ""
+        },
+        {
+          "name": "Fatoumata",
+          "text": "Survival essential!",
+          "id": 30,
+          "country": "Mali",
+          title: ""
+        },
+        {
+          "name": "Kwesi",
+          "text": "Compact design fits easily in my bag!",
+          "id": 31,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Yara",
+          "text": "Saved me during a blackout!",
+          "id": 32,
+          "country": "Egypt",
+          title: ""
+        },
+        {
+          "name": "Chiku",
+          "text": "Long-lasting battery life!",
+          "id": 33,
+          "country": "Tanzania",
+          title: ""
+        },
+        {
+          "name": "Jabari",
+          "text": "Excellent value for money!",
+          "id": 34,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Sibongile",
+          "text": "Incredibly bright!",
+          "id": 35,
+          "country": "South Africa",
+          title: ""
+        },
+        {
+          "name": "Amina",
+          "text": "A must-have for every household!",
+          "id": 36,
+          "country": "Nigeria",
+          title: ""
+        },
+        {
+          "name": "Kabelo",
+          "text": "Easy to carry during hikes!",
+          "id": 37,
+          "country": "Botswana",
+          title: ""
+        },
+        {
+          "name": "Amara",
+          "text": "Great for exploring caves!",
+          "id": 38,
+          "country": "Cameroon",
+          title: ""
+        },
+        {
+          "name": "Youssef",
+          "text": "Reliable in any weather condition!",
+          "id": 39,
+          "country": "Morocco",
+          title: ""
+        },
+        {
+          "name": "Chipo",
+          "text": "Love the adjustable focus!",
+          "id": 40,
+          "country": "Zimbabwe",
+          title: ""
+        },
+        {
+          "name": "Akello",
+          "text": "Compact and powerful!",
+          "id": 41,
+          "country": "Uganda",
+          title: ""
+        },
+        {
+          "name": "Tariku",
+          "text": "Survived a fall without a scratch!",
+          "id": 42,
+          "country": "Ethiopia",
+          title: ""
+        },
+        {
+          "name": "Nassir",
+          "text": "Brighter than I expected!",
+          "id": 43,
+          "country": "Sudan",
+          title: ""
+        },
+        {
+          "name": "Fatima",
+          "text": "Great for outdoor adventures!",
+          "id": 44,
+          "country": "Algeria",
+          title: ""
+        },
+        {
+          "name": "Nana",
+          "text": "Provides peace of mind during power outages!",
+          "id": 45,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Nia",
+          "text": "Sturdy construction, feels solid!",
+          "id": 46,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Malika",
+          "text": "Compact and lightweight, perfect for travel!",
+          "id": 47,
+          "country": "Morocco",
+          title: ""
+        },
+        {
+          "name": "Nkosana",
+          "text": "Easy to operate, even with gloves on!",
+          "id": 48,
+          "country": "South Africa",
+          title: ""
+        },
+        {
+          "name": "Kwabena",
+          "text": "Impressive brightness!",
+          "id": 49,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Amadou",
+          "text": "Highly recommend for camping trips!",
+          "id": 50,
+          "country": "Senegal",
+          title: ""
+        }
+      ],
+      "rainguard_shoe_cover":[
+        {
+          "name": "Akin",
+          "text": "These RainGuard Shoe Covers from Nigeria kept my feet dry even in the heaviest downpour.",
+          "id": 1,
+          "country": "Nigeria",
+          title: ""
+        },
+        {
+          "name": "Adjoa",
+          "text": "RainGuard Shoe Protectors are a game-changer! I'm grateful for dry feet in rainy Ghana.",
+          "id": 2,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Wanjiku",
+          "text": "RainGuard Shoe Guards saved my shoes during the wet season in Nairobi, Kenya. Highly recommend!",
+          "id": 3,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Abeba",
+          "text": "RainGuard Shoe Wraps are a lifesaver in the rainy streets of Addis Ababa, Ethiopia. No more soggy socks!",
+          "id": 4,
+          "country": "Ethiopia",
+          title: ""
+        },
+        {
+          "name": "Thabo",
+          "text": "RainGuard Shoe Covers kept me stylish and dry in the rain-soaked streets of Cape Town, South Africa.",
+          "id": 5,
+          "country": "South Africa",
+          title: ""
+        },
+        {
+          "name": "Kwame",
+          "text": "RainGuard Shoe Protectors are a must-have for anyone in rainy Kampala, Uganda. They're durable and effective!",
+          "id": 6,
+          "country": "Uganda",
+          title: ""
+        },
+        {
+          "name": "Mwanaidi",
+          "text": "RainGuard Shoe Wraps are my go-to in the rainy season here in Dar es Salaam, Tanzania. They're a lifesaver!",
+          "id": 7,
+          "country": "Tanzania",
+          title: ""
+        },
+        {
+          "name": "Kofi",
+          "text": "RainGuard Shoe Covers are fantastic! They kept my shoes dry while I navigated the flooded roads of Monrovia, Liberia.",
+          "id": 8,
+          "country": "Liberia",
+          title: ""
+        },
+        {
+          "name": "Mulenga",
+          "text": "RainGuard Shoe Wraps are the best investment for the rainy days in Lusaka, Zambia. My shoes stay clean and dry!",
+          "id": 9,
+          "country": "Zambia",
+          title: ""
+        },
+        {
+          "name": "Fatima",
+          "text": "RainGuard Shoe Sleeves are a blessing in the rainy season of Maputo, Mozambique. No more wet socks!",
+          "id": 10,
+          "country": "Mozambique",
+          title: ""
+        },
+        {
+          "name": "Amara",
+          "text": "RainGuard Shoe Covers are a game-changer in the rainy streets of Abidjan, Côte d'Ivoire. My shoes have never been so dry!",
+          "id": 11,
+          "country": "Côte d'Ivoire",
+          title: ""
+        },
+        {
+          "name": "Ngozi",
+          "text": "RainGuard Shoe Protectors are fantastic! They kept my shoes dry and stylish in the rainy season of Kinshasa, Democratic Republic of the Congo.",
+          "id": 12,
+          "country": "Democratic Republic of the Congo",
+          title: ""
+        },
+        {
+          "name": "Kwesi",
+          "text": "RainGuard Shoe Protectors kept my shoes dry and stylish during the rainy season in Accra, Ghana. Highly recommend!",
+          "id": 13,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Chioma",
+          "text": "RainGuard Shoe Wraps are a game-changer! They kept my feet dry and comfortable in the rainy streets of Lagos, Nigeria.",
+          "id": 14,
+          "country": "Nigeria",
+          title: ""
+        },
+        {
+          "name": "Njeri",
+          "text": "RainGuard Shoe Covers are a must-have in the rainy season of Nairobi, Kenya. My shoes stay clean and dry all day!",
+          "id": 15,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Sipho",
+          "text": "RainGuard Shoe Guards are the best investment for anyone in rainy Cape Town, South Africa. They're durable and effective!",
+          "id": 16,
+          "country": "South Africa",
+          title: ""
+        },
+        {
+          "name": "Amanuel",
+          "text": "RainGuard Shoe Sleeves saved my shoes during the wet season in Addis Ababa, Ethiopia. I can't imagine rainy days without them!",
+          "id": 17,
+          "country": "Ethiopia",
+          title: ""
+        },
+        {
+          "name": "Namazzi",
+          "text": "RainGuard Shoe Covers are a must-have for navigating the flooded streets of Kampala, Uganda. They're durable and reliable!",
+          "id": 18,
+          "country": "Uganda",
+          title: ""
+        },
+        {
+          "name": "Juma",
+          "text": "RainGuard Shoe Protectors are fantastic! They kept my shoes dry and stylish in Dar es Salaam, Tanzania.",
+          "id": 19,
+          "country": "Tanzania",
+          title: ""
+        },
+        {
+          "name": "Maureen",
+          "text": "RainGuard Shoe Wraps are a blessing in the rainy season of Monrovia, Liberia. My shoes have never been so dry!",
+          "id": 20,
+          "country": "Liberia",
+          title: ""
+        },
+        {
+          "name": "Chisomo",
+          "text": "RainGuard Shoe Sleeves are a must-have in the rainy season of Lusaka, Zambia. No more soggy socks!",
+          "id": 21,
+          "country": "Zambia",
+          title: ""
+        },
+        {
+          "name": "Fernando",
+          "text": "RainGuard Shoe Covers kept my shoes dry while I navigated the flooded roads of Maputo, Mozambique. Highly recommend!",
+          "id": 22,
+          "country": "Mozambique",
+          title: ""
+        },
+        {
+          "name": "Awa",
+          "text": "RainGuard Shoe Guards are the best investment for the rainy days in Abidjan, Côte d'Ivoire. They're durable and effective!",
+          "id": 23,
+          "country": "Côte d'Ivoire",
+          title: ""
+        },
+        {
+          "name": "Nzuzi",
+          "text": "RainGuard Shoe Sleeves are fantastic! They kept my shoes dry and comfortable in rainy Kinshasa, Democratic Republic of the Congo.",
+          "id": 24,
+          "country": "Democratic Republic of the Congo",
+          title: ""
+        },
+        {
+          "name": "Adoma",
+          "text": "RainGuard Shoe Covers are a game-changer in the rainy streets of Accra, Ghana. My shoes stay clean and dry all day!",
+          "id": 25,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Obi",
+          "text": "RainGuard Shoe Protectors are a lifesaver in the rainy streets of Lagos, Nigeria. No more soggy socks!",
+          "id": 26,
+          "country": "Nigeria",
+          title: ""
+        },
+        {
+          "name": "Nyambura",
+          "text": "RainGuard Shoe Sleeves are fantastic! They kept my feet dry and stylish during the rainy season in Nairobi, Kenya.",
+          "id": 27,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Lungelo",
+          "text": "RainGuard Shoe Wraps are a must-have for navigating the flooded streets of Cape Town, South Africa. They're durable and reliable!",
+          "id": 28,
+          "country": "South Africa",
+          title: ""
+        },
+        {
+          "name": "Nakato",
+          "text": "RainGuard Shoe Covers are a blessing in the rainy season of Kampala, Uganda. No more soggy socks!",
+          "id": 29,
+          "country": "Uganda",
+          title: ""
+        },
+        {
+          "name": "Rashid",
+          "text": "RainGuard Shoe Guards are a game-changer! They kept my shoes dry and stylish in Dar es Salaam, Tanzania.",
+          "id": 30,
+          "country": "Tanzania",
+          title: ""
+        },
+        {
+          "name": "Yaa",
+          "text": "RainGuard Shoe Sleeves saved my shoes during the wet season in Monrovia, Liberia. I'm grateful for dry feet!",
+          "id": 31,
+          "country": "Liberia",
+          title: ""
+        },
+        {
+          "name": "Chola",
+          "text": "RainGuard Shoe Covers are fantastic! They kept my shoes dry while I navigated the flooded roads of Lusaka, Zambia.",
+          "id": 32,
+          "country": "Zambia",
+          title: ""
+        },
+        {
+          "name": "Anabela",
+          "text": "RainGuard Shoe Protectors are the best investment for the rainy days in Maputo, Mozambique. Highly recommend!",
+          "id": 33,
+          "country": "Mozambique",
+          title: ""
+        },
+        {
+          "name": "Kouassi",
+          "text": "RainGuard Shoe Wraps are a must-have in the rainy streets of Abidjan, Côte d'Ivoire. They're durable and effective!",
+          "id": 34,
+          "country": "Côte d'Ivoire",
+          title: ""
+        },
+        {
+          "name": "Nzuzi",
+          "text": "RainGuard Shoe Sleeves are fantastic! They kept my shoes dry and stylish during the rainy season in Kinshasa, Democratic Republic of the Congo.",
+          "id": 35,
+          "country": "Democratic Republic of the Congo",
+          title: ""
+        },
+        {
+          "name": "Ato",
+          "text": "RainGuard Shoe Covers are a game-changer in the rainy streets of Accra, Ghana. My shoes stay clean and dry all day!",
+          "id": 36,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Obi",
+          "text": "RainGuard Shoe Guards are a lifesaver in the rainy streets of Lagos, Nigeria. No more soggy socks!",
+          "id": 37,
+          "country": "Nigeria",
+          title: ""
+        },
+        {
+          "name": "Nyambura",
+          "text": "RainGuard Shoe Sleeves are fantastic! They kept my feet dry and stylish during the rainy season in Nairobi, Kenya.",
+          "id": 38,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Lungelo",
+          "text": "RainGuard Shoe Wraps are a must-have for navigating the flooded streets of Cape Town, South Africa. They're durable and reliable!",
+          "id": 39,
+          "country": "South Africa",
+          title: ""
+        },
+        {
+          "name": "Nakato",
+          "text": "RainGuard Shoe Covers are a blessing in the rainy season of Kampala, Uganda. No more soggy socks!",
+          "id": 40,
+          "country": "Uganda",
+          title: ""
+        },
+        {
+          "name": "Rashid",
+          "text": "RainGuard Shoe Guards are a game-changer! They kept my shoes dry and stylish in Dar es Salaam, Tanzania.",
+          "id": 41,
+          "country": "Tanzania",
+          title: ""
+        },
+        {
+          "name": "Yaa",
+          "text": "RainGuard Shoe Sleeves saved my shoes during the wet season in Monrovia, Liberia. I'm grateful for dry feet!",
+          "id": 42,
+          "country": "Liberia",
+          title: ""
+        },
+        {
+          "name": "Chola",
+          "text": "RainGuard Shoe Covers are fantastic! They kept my shoes dry while I navigated the flooded roads of Lusaka, Zambia.",
+          "id": 43,
+          "country": "Zambia",
+          title: ""
+        },
+        {
+          "name": "Anabela",
+          "text": "RainGuard Shoe Protectors are the best investment for the rainy days in Maputo, Mozambique. Highly recommend!",
+          "id": 44,
+          "country": "Mozambique",
+          title: ""
+        },
+        {
+          "name": "Kouassi",
+          "text": "RainGuard Shoe Wraps are a must-have in the rainy streets of Abidjan, Côte d'Ivoire. They're durable and effective!",
+          "id": 45,
+          "country": "Côte d'Ivoire",
+          title: ""
+        },
+        {
+          "name": "Nzuzi",
+          "text": "RainGuard Shoe Sleeves are fantastic! They kept my shoes dry and stylish during the rainy season in Kinshasa, Democratic Republic of the Congo.",
+          "id": 46,
+          "country": "Democratic Republic of the Congo",
+          title: ""
+        },
+        {
+          "name": "Ato",
+          "text": "RainGuard Shoe Covers are a game-changer in the rainy streets of Accra, Ghana. My shoes stay clean and dry all day!",
+          "id": 47,
+          "country": "Ghana",
+          title: ""
+        },
+        {
+          "name": "Obi",
+          "text": "RainGuard Shoe Guards are a lifesaver in the rainy streets of Lagos, Nigeria. No more soggy socks!",
+          "id": 48,
+          "country": "Nigeria",
+          title: ""
+        },
+        {
+          "name": "Nyambura",
+          "text": "RainGuard Shoe Sleeves are fantastic! They kept my feet dry and stylish during the rainy season in Nairobi, Kenya.",
+          "id": 49,
+          "country": "Kenya",
+          title: ""
+        },
+        {
+          "name": "Lungelo",
+          "text": "RainGuard Shoe Wraps are a must-have for navigating the flooded streets of Cape Town, South Africa. They're durable and reliable!",
+          "id": 50,
+          "country": "South Africa",
+          title: ""
+        }
+      ],
+      "findlet_general":[
+        {
+          "name": "Kwame",
+          "text": "Findlet is my one-stop shop for all things tech! Their selection of gadgets is unbeatable.",
+          "id": 1,
+          "country": "Ghana",
+          "title": ""
+        },
+        {
+          "name": "Aisha",
+          "text": "I adore Findlet! Their customer service team is incredibly helpful, and I always receive my orders on time.",
+          "id": 2,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Fatou",
+          "text": "Findlet's fashion collection is exquisite! I've purchased several items, and they never disappoint.",
+          "id": 3,
+          "country": "Senegal",
+          "title": ""
+        },
+        {
+          "name": "Tariro",
+          "text": "Shopping at Findlet is a delight. Their website is easy to navigate, and I love the variety of products available.",
+          "id": 4,
+          "country": "Zimbabwe",
+          "title": ""
+        },
+        {
+          "name": "Chibuzo",
+          "text": "Findlet exceeded my expectations! I received my order sooner than expected, and the quality was superb.",
+          "id": 5,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Mpho",
+          "text": "I'm impressed by Findlet's commitment to quality. The products I've purchased have all been durable and long-lasting.",
+          "id": 6,
+          "country": "South Africa",
+          "title": ""
+        },
+        {
+          "name": "Nneka",
+          "text": "Findlet's home decor section is fantastic! I've decorated my entire house with their unique pieces.",
+          "id": 7,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Bongani",
+          "text": "I highly recommend Findlet to anyone looking for reliable online shopping. Their prices are competitive, and the service is impeccable.",
+          "id": 8,
+          "country": "South Africa",
+          "title": ""
+        },
+        {
+          "name": "Ifeoma",
+          "text": "Findlet's beauty products are my go-to. I love that they offer both local and international brands.",
+          "id": 9,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Naledi",
+          "text": "I'm a loyal Findlet customer because of their excellent customer service. They go above and beyond to ensure customer satisfaction.",
+          "id": 10,
+          "country": "Botswana",
+          "title": ""
+        },
+        {
+          "name": "Tendai",
+          "text": "Findlet's sports equipment selection is top-notch! I'm always able to find what I need for my workouts.",
+          "id": 11,
+          "country": "Zimbabwe",
+          "title": ""
+        },
+        {
+          "name": "Kofi",
+          "text": "I've had a fantastic experience shopping with Findlet. Their website is user-friendly, and their delivery is prompt.",
+          "id": 12,
+          "country": "Ghana",
+          "title": ""
+        },
+        {
+          "name": "Ifeoluwa",
+          "text": "Findlet's kitchenware range is impressive! I've upgraded my kitchen with their high-quality products.",
+          "id": 13,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Amina",
+          "text": "I'm grateful for Findlet's wide range of educational toys for my kids. They keep them engaged and entertained for hours.",
+          "id": 14,
+          "country": "Kenya",
+          "title": ""
+        },
+        {
+          "name": "Tariq",
+          "text": "Findlet is my go-to for gifts! I always find something unique and special for my loved ones.",
+          "id": 15,
+          "country": "Egypt",
+          "title": ""
+        },
+        {
+          "name": "Temi",
+          "text": "Findlet's customer support team is exceptional! They assisted me promptly when I had an issue with my order.",
+          "id": 16,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Mwangi",
+          "text": "I appreciate Findlet's commitment to sustainability. Their eco-friendly products align with my values.",
+          "id": 17,
+          "country": "Kenya",
+          "title": ""
+        },
+        {
+          "name": "Adanna",
+          "text": "Findlet offers great value for money. I'm always impressed by the quality of their products considering the price.",
+          "id": 18,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Kwesi",
+          "text": "I love supporting local businesses, and Findlet makes it easy with their wide selection of African-made products.",
+          "id": 19,
+          "country": "Ghana",
+          "title": ""
+        },
+        {
+          "name": "Ngozi",
+          "text": "Findlet's mobile app is convenient for on-the-go shopping. It's intuitive and user-friendly.",
+          "id": 20,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Tunde",
+          "text": "I've recommended Findlet to all my friends and family. It's my favorite online store!",
+          "id": 21,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Fatma",
+          "text": "Findlet's variety of payment options makes shopping hassle-free. I appreciate the flexibility.",
+          "id": 22,
+          "country": "Kenya",
+          "title": ""
+        },
+        {
+          "name": "Jabulani",
+          "text": "I've had a positive experience shopping with Findlet. Their website is secure, and I feel confident making purchases.",
+          "id": 23,
+          "country": "South Africa",
+          "title": ""
+        },
+        {
+          "name": "Musa",
+          "text": "Findlet's electronics department has everything I need. I recently purchased a laptop, and it's been working perfectly.",
+          "id": 24,
+          "country": "Ghana",
+          "title": ""
+        },
+        {
+          "name": "Zanele",
+          "text": "Findlet's quick delivery surprised me! I received my order within days of placing it.",
+          "id": 25,
+          "country": "South Africa",
+          "title": ""
+        },
+        {
+          "name": "Sadeeq",
+          "text": "I'm impressed by Findlet's commitment to customer satisfaction. They truly prioritize their customers' needs.",
+          "id": 26,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Nomsa",
+          "text": "Findlet's fashion collection is trendy and affordable. I've received many compliments on the outfits I've purchased.",
+          "id": 27,
+          "country": "South Africa",
+          "title": ""
+        },
+        {
+          "name": "Chukwuemeka",
+          "text": "I love browsing through Findlet's curated collections. It's like having a personal shopper at my fingertips.",
+          "id": 28,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Aminata",
+          "text": "Findlet's return policy is hassle-free. I recently exchanged a product, and the process was smooth.",
+          "id": 29,
+          "country": "Senegal",
+          "title": ""
+        },
+        {
+          "name": "Folarin",
+          "text": "I trust Findlet for all my online purchases. Their reputation for quality precedes them.",
+          "id": 30,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Aisha",
+          "text": "Findlet's website is visually appealing, and I enjoy the shopping experience it provides.",
+          "id": 31,
+          "country": "Kenya",
+          "title": ""
+        },
+        {
+          "name": "Nandi",
+          "text": "I appreciate Findlet's attention to detail. Their products always exceed my expectations.",
+          "id": 32,
+          "country": "South Africa",
+          "title": ""
+        },
+        {
+          "name": "Chiamaka",
+          "text": "Findlet's range of baby products is extensive. I found everything I needed for my newborn in one place.",
+          "id": 33,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Dike",
+          "text": "Findlet's commitment to customer privacy is commendable. I feel safe sharing my information with them.",
+          "id": 34,
+          "country": "Ghana",
+          "title": ""
+        },
+        {
+          "name": "Fatoumata",
+          "text": "I'm impressed by Findlet's dedication to community engagement. They regularly support local initiatives and charities.",
+          "id": 35,
+          "country": "Mali",
+          "title": ""
+        },
+        {
+          "name": "Zara",
+          "text": "Findlet's product reviews are helpful in making informed decisions. I always check them before making a purchase.",
+          "id": 36,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Jibril",
+          "text": "I'm grateful for Findlet's efficient delivery service. I received my order much sooner than expected.",
+          "id": 37,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Nia",
+          "text": "Findlet's commitment to diversity is evident in their product range. I appreciate their inclusivity.",
+          "id": 38,
+          "country": "South Africa",
+          "title": ""
+        },
+        {
+          "name": "Mpho",
+          "text": "I've never been disappointed with a purchase from Findlet. Their quality control is top-notch.",
+          "id": 39,
+          "country": "South Africa",
+          "title": ""
+        },
+        {
+          "name": "Simba",
+          "text": "Findlet's rewards program is a nice added bonus. I love earning points with every purchase.",
+          "id": 40,
+          "country": "Kenya",
+          "title": ""
+        },
+        {
+          "name": "Adebayo",
+          "text": "I've shopped with Findlet for years, and they consistently deliver excellent service. I'm a loyal customer for life.",
+          "id": 41,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Nneka",
+          "text": "Findlet's online community is vibrant and engaging. I enjoy participating in discussions and sharing product recommendations.",
+          "id": 42,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Tariro",
+          "text": "I appreciate Findlet's efforts to minimize their environmental impact. Their eco-friendly packaging is a step in the right direction.",
+          "id": 43,
+          "country": "Zimbabwe",
+          "title": ""
+        },
+        {
+          "name": "Obi",
+          "text": "Findlet's commitment to customer feedback sets them apart. They actively listen to their customers and implement changes accordingly.",
+          "id": 44,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Aminata",
+          "text": "I love supporting African businesses, and Findlet makes it easy with their wide selection of locally sourced products.",
+          "id": 45,
+          "country": "Ghana",
+          "title": ""
+        },
+        {
+          "name": "Kabelo",
+          "text": "Findlet's product descriptions are thorough and accurate. I always know exactly what to expect when my order arrives.",
+          "id": 46,
+          "country": "South Africa",
+          "title": ""
+        },
+        {
+          "name": "Kehinde",
+          "text": "I recently discovered Findlet, and I'm impressed by their professionalism and efficiency. They've gained a new loyal customer.",
+          "id": 47,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Amara",
+          "text": "Findlet's sales and promotions are unbeatable. I always find great deals on items I've been eyeing.",
+          "id": 48,
+          "country": "Kenya",
+          "title": ""
+        },
+        {
+          "name": "Yemi",
+          "text": "I appreciate Findlet's commitment to customer education. Their blog posts and articles are informative and helpful.",
+          "id": 49,
+          "country": "Nigeria",
+          "title": ""
+        },
+        {
+          "name": "Ayodele",
+          "text": "Findlet's dedication to customer satisfaction is unmatched. They truly value their customers and their feedback.",
+          "id": 50,
+          "country": "Nigeria",
+          "title": ""
+        }
+      ]
+      
+      
+      
 }
 
 // Array of possible titles
