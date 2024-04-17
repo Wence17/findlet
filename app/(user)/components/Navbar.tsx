@@ -61,14 +61,14 @@ const Navbar = () => {
               {pathname === link.href ? (
                 <Link
                   href={link.href}
-                  className="text-xl font-semibold text-primary"
+                  className="text-lg font-semibold text-primary"
                 >
                   {link.name}
                 </Link>
               ) : (
                 <Link
                   href={link.href}
-                  className="text-xl font-semibold text-gray-600 transition duration-100 hover:text-primary"
+                  className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary"
                 >
                   {link.name}
                 </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
             </div>
           ))}
           <div
-            className="flex items-center text-xl font-semibold cursor-pointer text-gray-600 transition duration-100 hover:text-primary relative"
+            className="flex items-center text-lg font-semibold cursor-pointer text-gray-600 transition duration-100 hover:text-primary relative"
             onClick={() => setDclicked(!dclicked)}
           >
             Categories <ArrowBigDown />
@@ -106,10 +106,10 @@ const Navbar = () => {
               )}
           </div>
         </nav>
-        <nav className="lg:hidden ml-24" onClick={() => setClicked(!clicked)}>
+        <GoogleTranslate />
+        <nav className="lg:hidden mr-o" onClick={() => setClicked(!clicked)}>
           <Menu />
         </nav>
-        <GoogleTranslate />
 
         <div className="flex divide-x border-r sm:border-l">
           <Button

@@ -31,6 +31,7 @@ export type Base = {
     // description:string
     description:Block[]
     categoryName:string
+    product_youtube_link:string
   }
 
   interface IAppsProps{

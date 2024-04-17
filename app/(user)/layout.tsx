@@ -29,11 +29,11 @@ export default function RootLayout({
           {children}
           <Footer />
         </CartProviders>
-      </body>
       <Script
         type="text/javascript"
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
       ></Script>
+      </body>
     </html>
   );
 }

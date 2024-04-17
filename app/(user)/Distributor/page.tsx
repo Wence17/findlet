@@ -1,6 +1,6 @@
 "use client";
 import { client } from "@/sanity/lib/client";
-import { allProductsQuery } from "@/sanity/lib/query";
+import { productsQuery } from "@/sanity/lib/query";
 import { SimplifiedProduct } from "@/typings";
 import { ArrowRight, Mail, MessageCircleMore } from "lucide-react";
 import Image from "next/image";
@@ -8,6 +8,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import distributor from "@/public/assets/images/Distributor.jpg";
+import francis from "@/public/assets/images/Lawrence.jpg"
+import ann from "@/public/assets/images/Ann.jpg"
 // import FacebookPixel from 'react-facebook-pixel';
 
 const AllProducts = () => {
@@ -16,7 +18,7 @@ const AllProducts = () => {
   useEffect(() => {
     const handleFetch = async () => {
       try {
-        const product = await client.fetch(allProductsQuery);
+        const product = await client.fetch(productsQuery);
         setProducts(product);
       } catch (error) {
         console.log(
@@ -227,7 +229,84 @@ const AllProducts = () => {
           ))}
         </div>
       </div>
-      <div className="bg-gray-100 my-5 mx-auto">
+      <div className="md:flex md:divide-x-4 px-6">
+      <section className="bg-white dark:bg-gray-900">
+  <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+    <figure className="max-w-screen-md mx-auto">
+      <svg
+        className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+        viewBox="0 0 24 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+          fill="currentColor"
+        />
+      </svg>
+      <blockquote>
+        <p className="text-2xl font-medium text-gray-900 dark:text-white">
+        &quot;Partnering with Findlet has revolutionized our distribution business. Their advanced technology, seamless logistics, and unwavering support have significantly boosted our sales and operational efficiency.&quot;
+        </p>
+      </blockquote>
+      <figcaption className="flex items-center justify-center mt-6 space-x-3">
+        <Image
+          className="w-6 h-6 rounded-full"
+          src={francis}
+          alt="profile picture"
+        />
+        <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+          <div className="pr-3 font-medium text-gray-900 dark:text-white">
+            Mr Lawrence
+          </div>
+          <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+            Lagos Distributor
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+      <section className="bg-white dark:bg-gray-900">
+  <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+    <figure className="max-w-screen-md mx-auto">
+      <svg
+        className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+        viewBox="0 0 24 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+          fill="currentColor"
+        />
+      </svg>
+      <blockquote>
+        <p className="text-2xl font-medium text-gray-900 dark:text-white">
+        &quot;Findlet&apos;s commitment to quality and innovation has been instrumental in our success as distributors. Their support has enabled us to thrive and provide top-notch products and services to our customers.&quot;
+        </p>
+      </blockquote>
+      <figcaption className="flex items-center justify-center mt-6 space-x-3">
+        <Image
+          className="w-6 h-6 rounded-full"
+          src={ann}
+          alt="profile picture"
+        />
+        <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+          <div className="pr-3 font-medium text-gray-900 dark:text-white">
+            Madam Ann
+          </div>
+          <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+            Abuja Distributor
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+</div>
+
+      <div className="bg-gray-50 my-5 mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-5 contact_options md:mx-24">
           <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
             <Mail className="text-2xl mb-2" />

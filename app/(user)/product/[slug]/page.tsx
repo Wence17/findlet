@@ -112,7 +112,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
           </div>
         </div>
         {/* iframe for video*/}
-        {/* <div className="mt-48">Hello video</div> */}
+        {/* <div className="">
+          {product.product_youtube_link}
+        </div> */}
         {/* <div id="productTestimonial"> */}
         <ProductTestimonial productName={product.name} />
         {/* </div> */}

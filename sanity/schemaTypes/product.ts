@@ -63,6 +63,11 @@ export default defineType({
       title: 'Stripe Price ID',
       type: 'string',
     }),
+    defineField({
+      name: 'product_youtube_link',
+      title: 'Product YouTube Link',
+      type: 'string',
+    }),
 
 
 
