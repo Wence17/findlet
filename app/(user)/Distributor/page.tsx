@@ -245,7 +245,7 @@ const AllProducts = () => {
         />
       </svg>
       <blockquote>
-        <p className="text-2xl font-medium text-gray-900 dark:text-white">
+        <p className="text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
         &quot;Partnering with Findlet has revolutionized our distribution business. Their advanced technology, seamless logistics, and unwavering support have significantly boosted our sales and operational efficiency.&quot;
         </p>
       </blockquote>
@@ -282,7 +282,7 @@ const AllProducts = () => {
         />
       </svg>
       <blockquote>
-        <p className="text-2xl font-medium text-gray-900 dark:text-white">
+        <p className="text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
         &quot;Findlet&apos;s commitment to quality and innovation has been instrumental in our success as distributors. Their support has enabled us to thrive and provide top-notch products and services to our customers.&quot;
         </p>
       </blockquote>
