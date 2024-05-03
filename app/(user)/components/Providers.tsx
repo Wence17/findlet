@@ -8,8 +8,8 @@ const CartProviders = ({ children }: { children: ReactNode }) => {
       mode="payment"
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
-      successUrl="https://findlet.vercel.app/payment/success"
-      cancelUrl="https://findlet.vercel.app/payment/error"
+      successUrl="https://findlet.ng/payment/success"
+      cancelUrl="https://findlet.ng/payment/error"
       currency="NGN"
       billingAddressCollection={true}
       shouldPersist={true}

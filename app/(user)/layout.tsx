@@ -7,6 +7,7 @@ import CartProviders from "./components/Providers";
 import ShoppingCartModal from "./components/ShoppingCartModal";
 import Footer from "./components/Footer";
 import Script from "next/script";
+import FacebookPixel from "./components/FacebookPixel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,11 +29,12 @@ export default function RootLayout({
           <ShoppingCartModal />
           {children}
           <Footer />
+          <FacebookPixel />
         </CartProviders>
-      <Script
-        type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-      ></Script>
+        <Script
+          type="text/javascript"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></Script>
       </body>
     </html>
   );

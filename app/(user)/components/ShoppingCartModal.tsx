@@ -50,7 +50,7 @@ const ShoppingCartModal = () => {
         amount: totalPrice ?? 0, //amount to be transacted by paystack
         email: email ?? "", //email of the person making the payment
         currency: "NGN", //currency eg KES or USD if you are in kenya
-        callback_url: "https://findlet.vercel.app/payment/success", //route where paystack will redirect with reference code after a successful payment
+        callback_url: "https://findlet.ng/payment/success", //route where paystack will redirect with reference code after a successful payment
         // callback_url: "http://localhost:3000/payment/success",
         channels: [
           "mobile_money",
