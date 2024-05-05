@@ -29,9 +29,6 @@ dependencies:
   flutterwave-react-v3:
     specifier: ^1.3.2
     version: 1.3.2(react-dom@18.2.0)(react@18.2.0)
-  i18next:
-    specifier: ^23.10.1
-    version: 23.10.1
   keen-slider:
     specifier: ^6.8.6
     version: 6.8.6
