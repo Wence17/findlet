@@ -8,6 +8,7 @@ import ShoppingCartModal from "./components/ShoppingCartModal";
 import Footer from "./components/Footer";
 import Script from "next/script";
 import FacebookPixel from "./components/FacebookPixel";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,8 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       {/* <Script id='fb-pixel' strategy='afterInteractive'>
-            {`
+      <Script id="fb-pixel" strategy="afterInteractive">
+        {`
               !function(f,b,e,v,n,t,s)
               {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
               n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -36,14 +37,23 @@ export default function RootLayout({
               fbq('init', '${process.env.FACEBOOK_PIXEL_ID}');
               fbq('track', 'PageView');
             `}
-          </Script> */}
+      </Script>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
+        <noscript>
+          <Image
+            height="1"
+            width="1"
+            alt=""
+            className="hidden"
+            src={`https://www.facebook.com/tr?id=${process.env.FACEBOOK_PIXEL_ID}&ev=PageView&noscript=1`}
+          />
+        </noscript>
         <CartProviders>
           <Navbar />
           <ShoppingCartModal />
           {children}
           <Footer />
-          {/* <FacebookPixel /> */}
+          <FacebookPixel />
         </CartProviders>
         <Script
           type="text/javascript"
