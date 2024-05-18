@@ -111,10 +111,19 @@ export default async function Page({ params }: { params: { slug: string } }) {
             </p> */}
           </div>
         </div>
+        <h2 className="text-2xl font-bold text-center mt-16">Product Description/Review</h2>
         {/* iframe for video*/}
-        {/* <div className="">
-          {product.product_youtube_link}
-        </div> */}
+        <div className="flex justify-center">
+          <iframe
+            className="rounded-2xl shadow-xl mb-10 mt-5 md:mt-16 h-72 md:h-[480px]"
+            src={product.product_youtube_link}
+            title={product.name}
+            width={853}
+            height={480}
+            allowFullScreen 
+            ng-show="showvideo"
+          ></iframe>
+        </div>
         {/* <div id="productTestimonial"> */}
         <ProductTestimonial productName={product.name} />
         {/* </div> */}

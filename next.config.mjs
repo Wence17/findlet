@@ -11,6 +11,11 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'www.facebook.com',
                 port:''
+            },
+            {
+                protocol: 'https',
+                hostname: 'www.youtube.com',
+                port:''
             }  
         ]
     }

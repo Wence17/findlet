@@ -14,7 +14,7 @@ interface VerifyParams {
 }
 
 
-const secretKey: string = process.env.PAYSTACK_TEST_SECRET_KEY as string;
+const secretKey: string = process.env.PAYSTACK_TEST_LIVE_KEY as string;
 const url: string = process.env.PAYSTACK_PAYMENT_URL as string;
 
 const getCommonHeaders = () => ({
