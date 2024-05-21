@@ -251,7 +251,7 @@ const ShoppingCartModal = () => {
                   Alternative Phone Number
                 </label>
                 <input
-                  {...register("alternativePhoneNumber", { required: true })}
+                  {...register("alternativePhoneNumber")}
                   type="tel"
                   className="mt-1 p-3 border border-gray-300 rounded w-full mb-4"
                   placeholder="Enter your alternaive number"
