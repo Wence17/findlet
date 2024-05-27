@@ -64,6 +64,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'duration',
+      title: 'Days or Weeks',
+      type: 'string',
+    }),
+    defineField({
       name: 'product_youtube_link',
       title: 'Product YouTube Link',
       type: 'string',
