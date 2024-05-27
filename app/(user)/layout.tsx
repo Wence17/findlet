@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import Script from "next/script";
 import FacebookPixel from "./components/FacebookPixel";
 import Image from "next/image";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +53,7 @@ export default function RootLayout({
         <CartProviders>
           <Navbar />
           <ShoppingCartModal />
+            <ToastContainer />
           {children}
           <Footer />
           <FacebookPixel />

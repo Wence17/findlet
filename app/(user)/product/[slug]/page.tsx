@@ -64,7 +64,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   ₦{product.price}
                 </span>
                 <span className="mb-0.5 text-red-500 line-through">
-                  ₦{product.price + 5000}
+                  ₦{product.price + 15000}
                 </span>
               </div>
 
