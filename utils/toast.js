@@ -12,7 +12,7 @@ export const showToast = (message) => {
         progress: undefined,
         rtl:false,
         pauseOnFocusLoss:true,
-        theme:"light",
+        theme:"colored",
         Bounce:true,
     });
 };

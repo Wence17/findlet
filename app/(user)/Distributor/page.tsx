@@ -337,9 +337,9 @@ const AllProducts = () => {
           <article className="flex flex-col items-center bg-color-bg-variant p-5 rounded-[1.2rem] text-center  border border-solid border-transparent transition-all duration-[400ms] ease-in-out hover:bg-[#fff] hover:bg-transparent hover:border-color-primary-variant contact_option">
             <BsWhatsapp className="text-2xl mb-2" />
             <h4 className="text-center ">WhatsApp</h4>
-            <h5 className="text-center ">+2348074902241</h5>
+            <h5 className="text-center ">+2347030309377</h5>
             <Link
-              href={"https://api.whatsapp.com/send?phone=2348074902241"}
+              href={"https://api.whatsapp.com/send?phone=2347030309377"}
               target="_blank"
               className="mt-3 inline-block text-xs"
             >

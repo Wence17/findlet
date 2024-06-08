@@ -65,7 +65,7 @@ const Footer = () => {
         <ul className="text-sm  transition-all duration-500">
           <li className="mb-6">
             <Link
-              href={"mailTo:obimkasomto@gmail.com"}
+              href={"mailTo:findlet142@gmail.com"}
               className="cursor-pointer text-gray-600 hover:text-gray-900"
             >
               Customer Support
@@ -97,7 +97,7 @@ const Footer = () => {
         <span className="text-sm text-gray-500 ">
         © {new Date().getFullYear()}{" "}
           <Link
-            href={"mailTo:obimkasomto@gmail.com"}
+            href={"mailTo:findlet142@gmail.com"}
             target="_blank"
             className="hover:underline"
           >

@@ -65,7 +65,7 @@ const page = () => {
           <PhoneCall className="h-[40px] w-[40px] md:h-[60px] md:w-[60px] mx-auto" />
           <div>
             {" "}
-            <p className="text-black text-sm md:text-lg ">+2348074902241</p>
+            <p className="text-black text-sm md:text-lg ">+2347030309377</p>
             <p className="text-black text-sm md:text-lg  ">+2348131980794</p>
           </div>
         </div>
