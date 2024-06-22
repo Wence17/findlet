@@ -44,7 +44,7 @@ const ShoppingCartModal = () => {
     redirectToCheckout,
   } = useShoppingCart();
 
-  
+  const [isClicked, setIsClicked] = useState(false);
   // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   //   // Access the value from the event
   //   const { name, value } = e.target as HTMLFormElement;
@@ -225,7 +225,11 @@ const ShoppingCartModal = () => {
             <p className="mt-0.5 text-sm text-gray-500">
               Shipping and taxes are calculated at checkout.
             </p>
-            <div className="my-4">
+
+            <p className="mt-6 flex justify-center text-center text-base font-medium text-primary hover:text-primary/80 cursor-pointer" onClick={() => setIsClicked(!isClicked)}>
+                Pay Now
+            </p>
+            {isClicked && <div className="my-4">
               <form action="" onSubmit={handleSubmit(handleCheckoutClick)} className="">
                 <label className="block text-sm font-medium text-gray-600">
                   Full Name
@@ -301,7 +305,7 @@ const ShoppingCartModal = () => {
                 />
               <button type="submit" className="w-full bg-blue-700 px-3 py-2 rounded mt-6"> {submitting ? "Please wait ..." : "Checkouts"}</button>
               </form>
-            </div>
+            </div>}
 
             {/* <div className="mt-6">
               <Button onClick={handleCheckoutClick} className="w-full">
