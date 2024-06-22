@@ -97,14 +97,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 price={product.price}
                 price_id={product.stripe_id}
               />
+            </div>
               <Link
-                className="h-9 px-3 bg-green-600 text-secondary-foreground hover:bg-green-600/80 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 lg:h-11 lg:px-8 md:h-10 md:px-4 md:py-2"
+                className="mt-5 h-9 px-3 bg-green-600 text-secondary-foreground hover:bg-green-600/80 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 lg:h-11 lg:px-8 md:h-10 md:px-4 md:py-2"
                 href="https://api.whatsapp.com/send?phone=2347030309377"
                 target="_blank"
               >
                 Order On WhatsApp
               </Link>
-            </div>
 
             <div className="md:hidden mt-12 text-base text-gray-500 tracking-wide text-justify">
               <PortableText
